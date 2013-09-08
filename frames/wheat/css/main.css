@@ -1,0 +1,1439 @@
+/*! normalize.css v1.1.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 11, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 30, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 43, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 53, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 72, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+html {
+  background: #fff;
+  /* 1 */
+
+  color: #000;
+  /* 2 */
+
+  font-size: 100%;
+  /* 3 */
+
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
+
+  -ms-text-size-adjust: 100%;
+  /* 4 */
+
+}
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 85, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+/* line 97, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 109, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+a:focus {
+  outline: thin dotted;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 117, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 132, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* line 137, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+/* line 142, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+/* line 147, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+/* line 152, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+/* line 157, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 166, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 174, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+b,
+strong {
+  font-weight: bold;
+}
+/* line 179, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+blockquote {
+  margin: 1em 40px;
+}
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 187, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+/* line 196, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+/* line 206, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 215, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+p,
+pre {
+  margin: 1em 0;
+}
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 224, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 237, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+/* line 247, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+q {
+  quotes: none;
+}
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+/* line 255, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 265, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 273, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+/* line 281, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+sup {
+  top: -0.5em;
+}
+/* line 285, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 297, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+/* line 304, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+dd {
+  margin: 0 0 0 40px;
+}
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+/* line 312, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+/* line 322, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+/* line 337, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+img {
+  border: 0;
+  /* 1 */
+
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+
+}
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 346, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 358, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+figure {
+  margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+/* line 370, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+form {
+  margin: 0;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 378, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+/* line 390, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+
+  *margin-left: -7px;
+  /* 3 */
+
+}
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+/* line 404, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+
+  margin: 0;
+  /* 2 */
+
+  vertical-align: baseline;
+  /* 3 */
+
+  *vertical-align: middle;
+  /* 3 */
+
+}
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 419, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+button,
+input {
+  line-height: normal;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 431, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 446, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+  *overflow: visible;
+  /* 4 */
+
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 459, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 471, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+  *height: 13px;
+  /* 3 */
+
+  *width: 13px;
+  /* 3 */
+
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 485, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 497, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+/* line 506, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 517, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+textarea {
+  overflow: auto;
+  /* 1 */
+
+  vertical-align: top;
+  /* 2 */
+
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 530, /Users/Ben/Sites/wheat/css/less/_normalize.less */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 13, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+/* line 21, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 32, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/* line 37, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+/* line 46, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 59, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+img {
+  vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+/* line 67, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 77, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+textarea {
+  resize: vertical;
+}
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 85, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 120, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+
+  *text-indent: -9999px;
+}
+/* line 128, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 139, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 148, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 164, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 178, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+.invisible {
+  visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 194, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+/* line 200, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+.clearfix:after {
+  clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 209, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+.clearfix {
+  *zoom: 1;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 236, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+  
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  /* line 243, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  /* line 248, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  /* line 252, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+       * Don't show links for images, or javascript/internal links
+       */
+  /* line 260, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  /* line 266, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /* line 272, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  
+  }
+  /* line 276, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  /* line 281, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  /* line 289, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  /* line 296, /Users/Ben/Sites/wheat/css/less/_boilerplate.less */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 1, /Users/Ben/Sites/wheat/css/less/layout.less */
+html {
+  width: 100%;
+  height: 100%;
+}
+/* line 6, /Users/Ben/Sites/wheat/css/less/layout.less */
+body {
+  width: 100%;
+  min-height: 100%;
+  background: #fefcb2 url(../img/bg.jpg) repeat-x fixed center top;
+  font-family: 'Times New Roman';
+}
+@media only screen and (min-width: 1601px) {
+  /* line 14, /Users/Ben/Sites/wheat/css/less/layout.less */
+  body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+/* line 19, /Users/Ben/Sites/wheat/css/less/layout.less */
+::selection {
+  background: #990000;
+  color: white;
+}
+/* line 40, /Users/Ben/Sites/wheat/css/less/layout.less */
+#project-wrapper {
+  width: 100%;
+  max-width: 780px;
+  min-height: 100%;
+  margin: auto;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjgiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.8) 25%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(25%, rgba(255, 255, 255, 0.8)));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.8) 25%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.8) 25%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.8) 25%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.8) 25%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#ccffffff', GradientType=0);
+  /* IE6-8 */
+
+  background-attachment: fixed;
+  padding: 0 60px;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* line 69, /Users/Ben/Sites/wheat/css/less/layout.less */
+#project-wrapper.no-transition {
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+}
+/* Common Items */
+/* line 77, /Users/Ben/Sites/wheat/css/less/layout.less */
+p {
+  padding: 0;
+  margin: 0 0 40px 0;
+  font-size: 26px;
+  text-align: center;
+}
+/* line 85, /Users/Ben/Sites/wheat/css/less/layout.less */
+img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+/* line 91, /Users/Ben/Sites/wheat/css/less/layout.less */
+.middle {
+  display: inline-block;
+}
+/* line 95, /Users/Ben/Sites/wheat/css/less/layout.less */
+.left {
+  float: left;
+}
+/* line 98, /Users/Ben/Sites/wheat/css/less/layout.less */
+.right {
+  float: right;
+}
+/* line 102, /Users/Ben/Sites/wheat/css/less/layout.less */
+.seeds-arrow {
+  background: url('../img/decor/seeds-arrow.png') no-repeat center center;
+  height: 69px;
+}
+/* line 107, /Users/Ben/Sites/wheat/css/less/layout.less */
+.upnext {
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+}
+/* line 113, /Users/Ben/Sites/wheat/css/less/layout.less */
+.nextsection {
+  text-align: center;
+  min-height: 22px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+/* line 119, /Users/Ben/Sites/wheat/css/less/layout.less */
+.nextsection .decor {
+  margin-top: 1px;
+}
+/* line 122, /Users/Ben/Sites/wheat/css/less/layout.less */
+.nextsection .decor.left {
+  animation: bouncyWheatLeft 2s ease-in-out 0s infinite alternate;
+  -webkit-animation: bouncyWheatLeft 2s ease-in-out 0s infinite alternate;
+}
+/* line 126, /Users/Ben/Sites/wheat/css/less/layout.less */
+.nextsection .decor.right {
+  animation: bouncyWheatRight 2s ease-in-out 0s infinite alternate;
+  -webkit-animation: bouncyWheatRight 2s ease-in-out 0s infinite alternate;
+}
+/* line 135, /Users/Ben/Sites/wheat/css/less/layout.less */
+header {
+  padding-top: 30px;
+  text-align: center;
+  height: 118px;
+  line-height: 118px;
+  margin-bottom: 45px;
+  position: relative;
+}
+/* line 144, /Users/Ben/Sites/wheat/css/less/layout.less */
+header #logo {
+  max-width: 100%;
+  width: 270px;
+}
+/* line 149, /Users/Ben/Sites/wheat/css/less/layout.less */
+header .decor {
+  border-top: 3px solid #990000;
+  border-bottom: 3px solid #990000;
+  width: 161px;
+  height: 56px;
+  display: inline-block !important;
+  margin-top: 30px;
+  position: absolute;
+  top: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 0 auto;
+  -moz-background-size: 0 auto;
+  -o-background-size: 0 auto;
+  background-size: 0 auto;
+  width: 0;
+  -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1) 0.2s, -webkit-background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1) 0.5s, background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1) 0.5s;
+  /* older webkit */
+
+  -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s, -webkit-background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s, background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s, -moz-background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s, background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  -ms-transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s, background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s, -o-background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s, background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s, -moz-background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s, background-size 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  /* easeOutBack */
+
+  float: none;
+}
+/* line 183, /Users/Ben/Sites/wheat/css/less/layout.less */
+header .decor.left {
+  background-image: url('../img/decor/header-left.png');
+  left: 0;
+}
+/* line 187, /Users/Ben/Sites/wheat/css/less/layout.less */
+header .decor.right {
+  background-image: url('../img/decor/header-right.png');
+  right: 0;
+}
+/* line 192, /Users/Ben/Sites/wheat/css/less/layout.less */
+header .decor.no-delay {
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+}
+/* line 200, /Users/Ben/Sites/wheat/css/less/layout.less */
+section {
+  padding-bottom: 10px;
+}
+/* line 203, /Users/Ben/Sites/wheat/css/less/layout.less */
+section figure {
+  margin: 0 auto 40px auto;
+}
+/* line 207, /Users/Ben/Sites/wheat/css/less/layout.less */
+section .hero-area {
+  padding: 0 20px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 660px;
+  max-width: 100%;
+}
+/* line 215, /Users/Ben/Sites/wheat/css/less/layout.less */
+section .hero-area .right {
+  margin-right: 9px;
+}
+/* line 219, /Users/Ben/Sites/wheat/css/less/layout.less */
+section .hero-area img {
+  max-width: 100%;
+  width: 280px;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 230, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro .hero-area {
+  margin-bottom: 37px;
+}
+/* line 234, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro .hero-area .seeds-arrow {
+  width: 283px;
+  margin-right: 9px;
+  margin-top: 5px;
+  width: 178px;
+  background-position: left center;
+}
+/* line 242, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro .hero-area .footnote {
+  font-size: 10px;
+  font-style: italic;
+  max-width: 340px;
+  margin: 0;
+}
+/* line 249, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro .hero-area .picture-hero {
+  width: 300px;
+}
+/* line 255, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro p {
+  margin-bottom: 12px;
+}
+/* line 259, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro #bowls {
+  text-align: center;
+}
+/* line 263, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro #bowls img {
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* line 268, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro #bowls img:hover {
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
+  -webkit-transform-origin: 84px 117px;
+  -moz-transform-origin: 84px 117px;
+  -ms-transform-origin: 84px 117px;
+  -o-transform-origin: 84px 117px;
+  transform-origin: 84px 117px;
+}
+/* line 274, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro #bowls .middle {
+  position: relative;
+  right: -7px;
+  margin-right: -36px;
+  margin-bottom: -20px;
+}
+/* line 280, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro #bowls .right {
+  margin-right: -44px;
+}
+/* line 284, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro #bowls .left {
+  margin-right: -50px;
+  margin-bottom: -20px;
+}
+/* line 292, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#intro .nextsection .middle {
+  max-width: 100%;
+  width: 291px;
+}
+/* line 299, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry {
+  padding-top: 20px;
+}
+/* line 303, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry .hero-area {
+  margin-bottom: 40px;
+}
+/* line 307, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry #perky-pics {
+  text-align: center;
+}
+/* line 310, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry #perky-pics img {
+  max-width: 100%;
+  width: 280px;
+  margin: auto;
+  display: inline-block;
+}
+/* line 318, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry #splitgraphic {
+  text-align: center;
+  color: #cc6600;
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: bold;
+  font-size: 36px;
+  white-space: nowrap;
+}
+/* line 328, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry #splitgraphic br {
+  display: none;
+}
+/* line 332, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry #splitgraphic div {
+  width: 193px;
+  margin: auto;
+  background: url('../img/meet-henry/splitgraphic.png') no-repeat;
+}
+/* line 337, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry #splitgraphic div#tophalf {
+  height: 147px;
+  background-position: top left;
+}
+/* line 341, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry #splitgraphic div#bottomhalf {
+  height: 72px;
+  background-position: bottom left;
+}
+/* line 348, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry #splitgraphic span {
+  margin-top: 13px;
+  margin-bottom: 20px;
+  display: block;
+}
+/* line 355, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#meet-henry .nextsection .middle {
+  max-width: 100%;
+  width: 201px;
+}
+/* line 362, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#whole-family {
+  padding-top: 30px;
+}
+/* line 370, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#whole-family p {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+/* line 375, /Users/Ben/Sites/wheat/css/less/layout.less */
+section#whole-family #family-shot {
+  max-width: 100%;
+  width: 639px;
+  margin: auto;
+}
+/* line 384, /Users/Ben/Sites/wheat/css/less/layout.less */
+footer {
+  background: url('../img/footer-logo.png') no-repeat bottom left;
+  height: 110px;
+  margin: 0 -60px;
+  padding: 0 50px 0 150px;
+}
+/* line 391, /Users/Ben/Sites/wheat/css/less/layout.less */
+footer ul {
+  margin: 0;
+  padding: 50px 0 0 0;
+  text-align: center;
+  display: block;
+}
+/* line 397, /Users/Ben/Sites/wheat/css/less/layout.less */
+footer ul li {
+  display: inline-block;
+  padding: 0 5px;
+  border-right: 1px solid black;
+  height: 12px;
+  line-height: 12px;
+}
+/* line 405, /Users/Ben/Sites/wheat/css/less/layout.less */
+footer ul li:last-child {
+  border: none;
+}
+/* line 409, /Users/Ben/Sites/wheat/css/less/layout.less */
+footer ul li a {
+  color: black !important;
+  text-decoration: none !important;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+/* line 422, /Users/Ben/Sites/wheat/css/less/layout.less */
+#page-cookies h1 {
+  font-size: 24px;
+  color: #990000;
+  font-family: Arial, sans-serif;
+}
+/* line 428, /Users/Ben/Sites/wheat/css/less/layout.less */
+#page-cookies p {
+  text-align: left;
+  font-size: 16px;
+}
+/* line 433, /Users/Ben/Sites/wheat/css/less/layout.less */
+#page-cookies strong {
+  color: #990000;
+}
+/* line 437, /Users/Ben/Sites/wheat/css/less/layout.less */
+#page-cookies h2 {
+  color: #990000;
+  font-family: Arial, sans-serif;
+  display: block;
+  font-size: 18px;
+}
+/* line 444, /Users/Ben/Sites/wheat/css/less/layout.less */
+#page-cookies #cookie-link {
+  margin-bottom: 15px;
+}
+/* line 447, /Users/Ben/Sites/wheat/css/less/layout.less */
+#page-cookies a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #cc6600;
+}
+@keyframes bouncyWheatLeft {
+  /* line 457, /Users/Ben/Sites/wheat/css/less/layout.less */
+  0% {
+    -webkit-transform: translate(5px, 0);
+    -moz-transform: translate(5px, 0);
+    -o-transform: translate(5px, 0);
+    -ms-transform: translate(5px, 0);
+    transform: translate(5px, 0);
+  }
+  /* line 460, /Users/Ben/Sites/wheat/css/less/layout.less */
+  100% {
+    -webkit-transform: translate(-15px, 0);
+    -moz-transform: translate(-15px, 0);
+    -o-transform: translate(-15px, 0);
+    -ms-transform: translate(-15px, 0);
+    transform: translate(-15px, 0);
+  }
+}
+@keyframes bouncyWheatRight {
+  /* line 465, /Users/Ben/Sites/wheat/css/less/layout.less */
+  0% {
+    -webkit-transform: translate(-5px, 0);
+    -moz-transform: translate(-5px, 0);
+    -o-transform: translate(-5px, 0);
+    -ms-transform: translate(-5px, 0);
+    transform: translate(-5px, 0);
+  }
+  /* line 468, /Users/Ben/Sites/wheat/css/less/layout.less */
+  100% {
+    -webkit-transform: translate(15px, 0);
+    -moz-transform: translate(15px, 0);
+    -o-transform: translate(15px, 0);
+    -ms-transform: translate(15px, 0);
+    transform: translate(15px, 0);
+  }
+}
+@-webkit-keyframes bouncyWheatLeft {
+  /* line 474, /Users/Ben/Sites/wheat/css/less/layout.less */
+  from {
+    -webkit-transform: translate(5px, 0);
+    -moz-transform: translate(5px, 0);
+    -o-transform: translate(5px, 0);
+    -ms-transform: translate(5px, 0);
+    transform: translate(5px, 0);
+  }
+  /* line 477, /Users/Ben/Sites/wheat/css/less/layout.less */
+  to {
+    -webkit-transform: translate(-15px, 0);
+    -moz-transform: translate(-15px, 0);
+    -o-transform: translate(-15px, 0);
+    -ms-transform: translate(-15px, 0);
+    transform: translate(-15px, 0);
+  }
+}
+@-webkit-keyframes bouncyWheatRight {
+  /* line 482, /Users/Ben/Sites/wheat/css/less/layout.less */
+  0% {
+    -webkit-transform: translate(-5px, 0);
+    -moz-transform: translate(-5px, 0);
+    -o-transform: translate(-5px, 0);
+    -ms-transform: translate(-5px, 0);
+    transform: translate(-5px, 0);
+  }
+  /* line 485, /Users/Ben/Sites/wheat/css/less/layout.less */
+  100% {
+    -webkit-transform: translate(15px, 0);
+    -moz-transform: translate(15px, 0);
+    -o-transform: translate(15px, 0);
+    -ms-transform: translate(15px, 0);
+    transform: translate(15px, 0);
+  }
+}
+/* Default layout */
+@media only screen and (max-width: 779px) {
+  /* line 3, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  #project-wrapper {
+    padding: 0 20px;
+  }
+  /* line 7, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  footer {
+    margin: 0 -20px;
+  }
+}
+@media only screen and (max-width: 494px) {
+  /* line 16, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  header .decor {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 739px) {
+  /* line 26, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  section#meet-henry #splitgraphic br {
+    display: inherit;
+  }
+}
+@media only screen and (max-width: 519px) {
+  /* line 34, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  section#meet-henry #splitgraphic {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 689px) {
+  /* line 44, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  body {
+    background: url(../img/bg-mobile.jpg) repeat-y center top scroll;
+    background-size: 800px auto;
+  }
+  /* line 52, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  #project-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  /* line 57, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  #nimgrowler {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  /* line 60, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  #nimgrowler #nimgrowler-prompt {
+    max-width: 100%;
+  }
+  /* line 63, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  #nimgrowler #nimgrowler-prompt p {
+    max-width: 100%;
+  }
+  /* line 67, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  #nimgrowler #nimgrowler-prompt #nimgrowler-link {
+    position: static;
+  }
+  /* line 74, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 80, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  section figure {
+    margin-bottom: 20px;
+  }
+  /* line 83, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  section .hero-area {
+    margin-bottom: 20px !important;
+  }
+  /* line 85, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  section .hero-area img {
+    display: block;
+    margin: auto !important;
+  }
+  /* line 92, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  .left,
+  .right {
+    float: none;
+  }
+  /* line 96, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  .decor {
+    display: none !important;
+  }
+  /* line 100, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  .nextsection {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  /* line 111, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  section#intro .hero-area .seeds-arrow {
+    width: 100%;
+    background-position: center center;
+  }
+  /* line 116, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  section#intro .hero-area .footnote {
+    margin: auto;
+    padding-top: 10px;
+  }
+  /* line 128, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  section#meet-henry .hero-area .graphic-hero {
+    margin-bottom: 10px !important;
+  }
+  /* line 136, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  section#whole-family p {
+    margin-top: -15px;
+  }
+  /* line 141, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  footer {
+    padding: 0 30px 30px 30px;
+  }
+  /* line 145, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  footer ul {
+    padding: 0;
+  }
+  /* line 149, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  footer ul li {
+    height: 10px;
+    line-height: 10px;
+  }
+  /* line 152, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  footer ul li a {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 165, /Users/Ben/Sites/wheat/css/less/layout_mobile.less */
+  section .hero-area {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+}

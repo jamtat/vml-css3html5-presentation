@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>	   <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>		   <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>		   <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Nestlé Cookie Policy</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/libs/modernizr-2.6.2.min.js"></script>				  
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+			.#project-wrapper {
+			   filter: none;
+			}
+		  </style>
+		<![endif]-->
+	
+	<link href="js/jpecrjs/jpecrjs-default.css" rel="stylesheet" type="text/css" />
+		
+	<script type="text/javascript" src="analytics/shreddedwheat.co.uk.google-analytics.js"></script>
+	</head>
+	<body id="page-cookies">
+		<!--[if lt IE 8]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+
+		
+		<div id="project-wrapper">
+						
+			<header>
+				<div class="decor left"></div>
+				<a href="http://shreddedwheat.co.uk">
+					<img src="img/logo.png" alt="Shredded Wheat" title="Shredded Wheat" class="middle" id="logo">
+				</a>
+				<div class="decor right"></div>
+			</header>
+			
+			<div id="content">
+				<a name="mainContent" id="mainContent"></a>
+				<h1>Nestlé Cookie Policy</h1>
+				
+				<h2>What are cookies?</h2>
+				<p>Cookies are small text files that are placed on your computer by websites that you visit. They are widely used in order to make websites work, or work more efficiently, as well as to provide information to the owners of the site.</p>
+				
+				<h2>How can I change my cookie settings?</h2>
+				<!-- Change Cookie Settings link -->
+				<div id="cookie-link">
+					<a href="javascript:$.ws.jpecrJs.display($.ws.jpecrJs());">Change Cookie Settings</a>
+				</div>
+				<!-- End of Change Cookie Settings link -->
+				<p>Click the above link at any time to make changes to your cookie settings for this website ('the Site'). You saved these settings when you previously visited the Site. Clicking the above link will allow you to make changes, in case you have changed your mind. Note that you can access this page and link at any time by clicking "Cookies" in the footer of this website.</p>
+				
+				<h2>About our Cookies</h2>
+				<p>When you use our website, a number of cookies are stored in your web browser. The new Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2011 (PECR), which came into force on the 26 May 2011, mean that we have to obtain your consent before cookies are set. In accordance with these regulations, we are making information available about the nature of the cookies which we may use on our sites.</p>
+				<p>The PECR legislation identifies one type of cookie, which is described as "strictly necessary" for the operation of a website, for which your consent as a user is not required. For all other cookies your consent is required. The cookies that may be used by our sites are explained below.</p>
+				
+				<h2>1. Cookies which we consider to be "strictly necessary"</h2>
+				<p>The Site uses one specific cookie which is essential for its software (ASP.NET) to work properly:
+					<strong>ASP.NET_SessionId</strong>. This cookie is used to create a session ID for the user, so that the system itself can identify the user as a unique and individual user, distinct from anyone else looking at the website. This information is not used or stored outside Nestle systems, and is held only temporarily while the user is accessing account pages and other pages which require unique and secure access. Without this cookie, such access could not remain secure, so it is very important.</p>
+					
+				<h2>2. Other Cookies</h2>
+				<p>Use of the Site may also result in a number of other cookies being set. These are described in greater detail on our
+					<a href="http://www.nestle.co.uk/Cookies/Pages/Cookies.aspx">site by site cookie overview</a>. The Site allows you to choose NOT to allow the services which create and use these cookies to run, although you may not have access to all the features of the Site if you do so. To do this now, just click on the "Change Cookie Settings" link higher up this page.</p>
+				<p>For more information on the new legistlation regarding cookies, see the Information Commissioners Office's website -
+					<a href="http://www.ico.gov.uk">www.ico.gov.uk</a>.</p>
+				<p>For useful information on cookies, see
+					<a href="http://www.aboutcookies.org/">AboutCookies.org</a>
+				</p>
+				
+				<h2>Legal Notice Update</h2>
+				<p>We reserve the right to make any changes and corrections to this notice. Please refer to this page from time to time to review these and new additional information.</p>
+				<p>® Reg. Trademark of Société des Produits Nestlé S.A. All rights reserved.</p>
+			</div>
+			
+			<footer>
+				<nav>
+					<ul>
+						<li><a href="http://www.nestlecereals.co.uk/content/Privacy.aspx" target="_blank">Privacy Policy</a>
+						<li><a href="http://www.nestlecereals.co.uk/content/Terms.aspx" target="_blank">Terms Of Use</a>
+						<li><a href="cookies.html" target="_blank">Cookies</a>
+						<li><a href="http://www.nestlecereals.co.uk/content/Sites.aspx" target="_blank">Related Sites</a>
+						<li><a href="http://www.nestlecereals.co.uk/content/Unsubscribe.aspx" target="_blank">Unsubscribe</a>
+						<li><a href="http://www.nestlecereals.co.uk/content/Faq.aspx" target="_blank">FAQ</a>
+						<li><a href="http://www.nestlecereals.co.uk/content/Contact.aspx" target="_blank">Contact Us</a>
+					</ul>
+				</nav>
+			</footer>
+			
+		</div>
+		
+		
+		
+	<!-- Script imports -->
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+		
+		<script src="js/jpecrjs/jpecrjs.nestle.uk.js"></script>
+		<script>
+			$(document).ready(function () {
+				$.ws.jpecrJs({
+					cookies:	{
+						necessary:		[
+											['']
+										],
+						functional:		[
+											['']
+										],
+						other:			[
+											//Google Analytics
+											['__utm*']
+										]
+					},
+					showMoreInfo: true,
+					moreInfoPage: 'cookies.html'
+				});
+			});
+		</script>
+		<!-- jPECR Code Ends Here -->
+		
+		<script src="js/libs/plugins.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

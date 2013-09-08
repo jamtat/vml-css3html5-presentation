@@ -1,0 +1,88 @@
+module.exports = (grunt) ->
+
+	# Project configuration
+	grunt.initConfig 
+		pkg: grunt.file.readJSON 'package.json'
+		
+		watch:
+			options:
+				livereload: true
+				
+#			styles: 
+#				files: ['css/less/*']
+#				tasks: ['less']
+#			
+#			coffeescript:
+#				files: ['js/coffee/*']
+#				tasks: ['coffee']
+#			
+#			html: 
+#				files: ['index.html', 'cookies.html']
+#				
+			all:
+				files: ['**', '!staging/**']
+				tasks: ['copy', 'less', 'coffee']
+
+				
+		coffee:
+			compileWithMaps:
+				options:
+					sourceMap: true
+				
+				files:
+					'js/main.js': 'js/coffee/main.coffee'
+			
+			production:
+				options:
+					sourceMap: false
+				
+				files:
+					'../staging/js/main.js': 'js/coffee/main.coffee'
+		
+		less: 
+			development: 
+				options: 
+					paths: ['less']
+					yuicompress: false
+					dumpLineNumbers: 'comments'
+				
+				files:
+					'css/main.css': 'css/less/main.less'
+			
+			production: 
+				options: 
+					paths: ['less']
+					yuicompress: false
+					dumpLineNumbers: 'none'
+				
+				files:
+					'../staging/css/main.css': 'css/less/main.less'
+					
+		copy:
+			staging:
+				files: [
+					{
+						expand:true
+						src: ['**', '!staging/**', '!package.json', '!Gruntfile.coffee', '!js/coffee/**', '!**.**.map', '!js/**.map', '!*.bat', '!node_modules/**', '!css/less/**', '!boilerplate misc/**', '!index.html']
+						dest: '../staging/'
+						filter: 'isFile'
+					}
+
+					{
+						expand:true
+						src: ['index.html']
+						dest: '../staging'
+						ext: '.htm'							
+					}
+				]
+
+
+
+	grunt.loadNpmTasks 'grunt-contrib-less'
+	grunt.loadNpmTasks 'grunt-contrib-coffee'
+	grunt.loadNpmTasks 'grunt-contrib-watch'
+	grunt.loadNpmTasks 'grunt-contrib-concat'
+	grunt.loadNpmTasks 'grunt-contrib-copy'
+	
+	# Default task(s)
+	grunt.registerTask 'default', ['watch']	

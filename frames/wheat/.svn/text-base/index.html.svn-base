@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>	   <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>		   <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>		   <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>The story of Henry Perky and Shredded Wheat.</title>
+		<meta name="description" content="One gentleman’s belief in looking after his health led to the creation of Shredded Wheat – the heart healthy* breakfast since 1893.">
+		<meta name="keywords" content="Shredded Wheat, Henry Perky, Shredded Wheat inventor, Healthy heart, Heart healthy, Breakfast, Healthy breakfast, Wholegrain, Wholegrain breakfast, No added sugar, No added salt, 100% whole grain, Low in saturated fat, High fibre, One ingredient, Heart, Wheat">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link href="js/jpecrjs/jpecrjs-default.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/libs/modernizr-2.6.2.min.js"></script>
+				  
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+			.#project-wrapper {
+			   filter: none;
+			}
+		  </style>
+		<![endif]-->
+	
+		
+		
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+			<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+			
+			<script src="js/jpecrjs/jpecrjs.nestle.uk.js" charset="utf-8"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$.ws.jpecrJs({
+						cookies:	{
+							necessary:		[
+												['']
+											],
+							functional:		[
+												['']
+											],
+							other:			[
+												//Google Analytics
+												['__utm*']
+											]
+						},
+						showMoreInfo: true,
+						moreInfoPage: 'cookies.html'
+					});
+				});
+			</script>
+		<!-- jPECR Code Ends Here -->
+	</head>
+	<body id="page-home">
+		<!--[if lt IE 8]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+
+		
+		<div id="project-wrapper">
+						
+			<header>
+				<div class="decor left"></div>
+				<a href="http://shreddedwheat.co.uk">
+					<img src="img/logo.png" title="Shredded Wheat" alt="Shredded Wheat Logo" class="middle" id="logo">
+				</a>
+				<div class="decor right"></div>
+			</header>
+			
+			<section id="intro">
+				<div class="hero-area clearfix">
+					<img src="img/intro/picture-hero.png" alt="Shredded Wheat and Bitesize Shredded Wheat" class="picture-hero left">
+					<img src="img/intro/graphic-hero.png" alt="The Heart Healthy Breakfast since 1893, invented by Henry Perky" class="graphic-hero right">
+					<div class="seeds-arrow right"></div>
+					<p class="footnote left">*&nbsp;Reducing consumption of saturated fat contributes to the maintenance of normal blood cholesterol levels. Shredded Wheat is low in saturated fat. Enjoy Shredded Wheat as part of a balanced, varied diet and a healthy lifestyle.</p>
+				</div>
+				<p>Together with an active lifestyle, Shredded Wheat can play a part in keeping your heart healthy*. And with just one simple ingredient, there are three good reasons to start your day with a bowl of 100% whole grain goodness.</p>
+				<div class="clearfix" id="bowls">
+					<img src="img/intro/bowl1.png" alt="No added sugar" class="left">
+					<img src="img/intro/bowl2.png" alt="No added salt" class="middle">
+					<img src="img/intro/bowl3.png" alt="Low in saturated fat" class="right">
+				</div>
+				<div class="upnext">&#8210; Up next &#8210;</div>
+				<div class="nextsection">
+					<img src="img/decor/nextsection-left.png" alt=">>>>>--- <3" class="decor left">
+					<img src="img/intro/next-section-title.png" alt="THE MAN BEHIND THE BREAKFAST" class="middle">
+					<img src="img/decor/nextsection-right.png" alt="<3 ---<<<<<" class="decor right">
+				</div>
+				
+				
+				<div class="seeds-arrow"></div>
+			</section>
+			<section id="meet-henry">
+				<div class="hero-area clearfix">
+					<img src="img/meet-henry/graphic-hero.png" alt="The Story of the Marvellous Henry Perky" class="graphic-hero left">
+					<img src="img/meet-henry/picture-hero.jpg" alt="Henry Perky looking splendid" class="picture-hero right">
+				</div>
+				<p>Back in 1893, Henry Perky put his heart into keeping healthy. Little did he know that when he invented a cereal made purely from the goodness of whole grain wheat, he’d be creating a breakfast that’s still loved more than 100 years on.</p>
+				<p>An intelligent and curious man, Henry grew up on a farm and was fascinated by machinery. After studying law, he decided to follow his passion for engineering.</p>
+				<figure id="perky-pics" class="clearfix">
+					<img src="img/meet-henry/perky1.jpg" alt="Henry Perky riding a bicycle" class="">
+					<img src="img/meet-henry/perky2.jpg" alt="Henry Perky rowing" class="">
+				</figure>
+				<p>Being the practical fellow he was, he designed a machine to make amazing wheat biscuits. But before he knew it, the biscuits became more popular than the machine.</p>
+				<figure id="splitgraphic">
+					<div id="tophalf"></div>
+					<span>The rest, as they say,
+						<br>is history.</span>
+					<div id="bottomhalf"></div>
+				</figure>
+				<p>For over 100 years, Shredded Wheat has been helping people have a great start to their day. Low in saturated fat, no added sugar, no added salt
+					<br>– just 100% whole grain goodness.</p>
+				<p>Start your day the way Henry would have wanted, with a bowl full of whole grain goodness.</p>
+				<div class="upnext">&#8210; Up next &#8210;</div>
+				<div class="nextsection">
+					<img src="img/decor/nextsection-left.png" alt=">>>>>--- <3" class="decor left">
+					<img src="img/meet-henry/next-section-title.png" alt="SEE OUR WHOLE FAMILY" class="middle">
+					<img src="img/decor/nextsection-right.png" alt="<3 ---<<<<<" class="decor right">
+				</div>
+				<div class="seeds-arrow"></div>
+			</section>
+			<section id="whole-family">
+				<div class="hero-area clearfix">
+					<img src="img/whole-family/graphic-hero.png" alt="Shredded Wheat and fruit" class="graphic-hero right">
+					<img src="img/whole-family/picture-hero.png" alt="The Breakfast Choice for Everyone" class="picture-hero left">
+				</div>
+				<p>From scrumptious Summer Fruits to delicious Honey Nut, Shredded Wheat has something for all tastes at breakfast.</p>
+				<img src="img/whole-family/pack-shot.png" alt="Shredded Wheat range" id="family-shot">
+			</section>
+			
+			<footer>
+				<nav>
+					<ul>
+						<li><a href="http://www.nestlecereals.co.uk/content/Privacy.aspx" target="_blank">Privacy Policy</a>
+						<li><a href="http://www.nestlecereals.co.uk/content/Terms.aspx" target="_blank">Terms Of Use</a>
+						<li><a href="cookies.html" target="_blank">Cookies</a>
+						<li><a href="http://www.nestlecereals.co.uk/content/Sites.aspx" target="_blank">Related Sites</a>
+						<li><a href="http://www.nestlecereals.co.uk/content/Unsubscribe.aspx" target="_blank">Unsubscribe</a>
+						<li><a href="http://www.nestlecereals.co.uk/content/Faq.aspx" target="_blank">FAQ</a>
+						<li><a href="http://www.nestlecereals.co.uk/content/Contact.aspx" target="_blank">Contact Us</a>
+					</ul>
+				</nav>
+			</footer>
+			
+		</div>
+		
+		
+		
+	<!-- Script imports -->
+		
+		<script type="text/javascript" src="analytics/shreddedwheat.co.uk.google-analytics.js"></script>
+		
+		<script src="js/libs/plugins.js" charset="utf-8"></script>
+		<script src="//j.maxmind.com/js/apis/geoip2/v2.0/geoip2.js"></script>
+		<script src="js/main.js" charset="utf-8"></script>		
+	</body>
+</html>

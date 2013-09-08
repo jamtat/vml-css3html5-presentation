@@ -2,22 +2,27 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 30px;
-    font-family: 'Lato', sans-serif;
     
-    var-accent: orange;
 }
 
 body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    
+    var-accent: orange;
+    color: aliceblue;
+    var-bg: hsl(0,0%,22%);
+    background-color: var(bg);
 }
 
 #container {
     width: 100%;
     height: 100%;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease 0s,
+                opacity 0 ease 0;
     opacity:0;
 }
 
@@ -32,17 +37,133 @@ section {
     height: 100%;     
     border-left: var(leftpadding) solid var(accent);
     position:relative;
-    padding: 10% calc( var(leftpadding) + 2%);
+    padding: 1.3em;
     line-height: 1em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-section::after {
+section.full {
+    padding: 0;
+}
+
+section.example > code {
+    margin: 0 -1.3em;
+}
+
+section article {
+    width:100%;
+    display:flex;
+    align-items: stretch;
+    transition: all 0.5s ease;
+}
+
+section article > * {
+    display:block;
+    flex: 0 0 90%;
+}
+
+pre code {
+    min-height: 100%;
+}
+
+section header {
+    position: relative;
+}
+
+section header::after {
     content:"";
     display:block;
     border-left: var(leftpadding) solid var(accent);
     border-bottom: var(leftpadding) solid transparent;
     border-top: var(leftpadding) solid transparent;
     position: absolute;
-    top: calc(10% - var(leftpadding) * 1.5);
-    left: 0;
+    top: 0.2em;
+    left: -1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+    font-size: 1em;
+    line-height: 100%;
+    margin-bottom: 0.2em;
+    color: var(accent);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    margin: 1em 0 0 1em;
+    font-size: 0.7em;
+    align-self: center;
+}
+
+iframe {
+    height: 100%;
+}
+
+code {
+    white-space: pre-wrap;
+    font-size: 0.5em;
+    padding-left: 2em;
+    background: none !important;
+}
+
+pre {
+    background: rgba(0,0,0,0.5);
+}
+
+p > code {
+    font-size: 1em;
+    padding: 0 0.3em;
+    margin:0 !important;
+    background: rgba(0,0,0,0.5) !important;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 0.5em;
+    position:relative;
+}
+
+li::before {
+    content: "";
+    display: block;
+    border-left: 0.3em solid white;
+    border-bottom: 0.2em solid transparent;
+    border-top: 0.2em solid transparent;
+    position: absolute;
+    top: 0.4em;
+    left: -1em;
+}
+
+footer {
+    margin: 1em 0 0 0;
+}
+
+footer ul {
+    margin-left: 2em;
+}
+
+footer li {
+    margin-bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }

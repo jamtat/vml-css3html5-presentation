@@ -1,0 +1,5 @@
+Options +Includes
+AddHandler server-parsed .html
+
+Options +FollowSymLinks
+RewriteEngine On
