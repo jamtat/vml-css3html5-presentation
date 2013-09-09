@@ -8,15 +8,17 @@
 		<link rel="stylesheet" href="presentation.css">
 		<title></title>
 		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
-	<body>
+	<body data-mode="vertical">
+	<div id="slides">
 		<div id="container">
 			<section>
 				<header>
 					<h1>Graceful HTML5+CSS3</h1>
 					<h2>Using the new hotness without breaking things</h2>
 				</header>
+				<figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatum, eos facilis voluptates sapiente numquam aliquam. Totam, quasi, commodi, sequi, minus excepturi consequuntur unde repellat ea id facere perferendis expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, beatae, nulla, inventore aspernatur similique vel necessitatibus neque incidunt ut unde distinctio sed aliquam quo perferendis adipisci suscipit eum nesciunt consequatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, similique, perspiciatis, reprehenderit voluptatibus labore dolores sint in dignissimos sed temporibus facere itaque nesciunt natus velit laudantium voluptates delectus iste aperiam?</figcaption>
 			</section>
 			<section>
 				<h3>Progressive Enhancement</h3>
@@ -91,7 +93,22 @@
 				</footer>
 			</section>
 		</div>
+		
+	</div>
+		
+	<div id="controls">
+		<div id="arrows">
+			<div id="left-arrow"></div>
+			<div id="right-arrow"></div>
+		</div>
+		<div id="notes"></div>
+	</div>
+		
 		<script type="text/javascript" src="highlight/highlight.pack.js"></script>
+		<script>document.write('<script src="http://'
+			  + location.host.split(':')[0]
+			  + ':8889/socket.io/socket.io.js"></'
+			  + 'script>')</script>
 		<script type="text/javascript" src="presentation.js"></script>
 	</body>
 
