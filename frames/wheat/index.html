@@ -128,7 +128,14 @@
 		<script src="//j.maxmind.com/js/apis/geoip2/v2.0/geoip2.js"></script>
 		<script src="js/main.js" charset="utf-8"></script>
 		<script>
-			$(function(){window.scrollTo(0,810)});
+			$(function() {
+				if(window.innerWidth >719) {
+					window.scrollTo(0,810)
+				} else {
+					window.scrollTo(0,1190)
+				}
+				
+			});
 		</script>
 	</body>
 </html>

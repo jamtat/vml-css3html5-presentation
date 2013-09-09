@@ -1,3 +1,6 @@
+var LIVE = true;
+
+
 var io = require('socket.io').listen(8889);
 
 var clients = [];
@@ -16,6 +19,10 @@ io.sockets.on('connection', function (socket) {
 						clients.push(socket);
 						console.log(socket.id + ' connected');
 						console.log(clients.length + ' clients connected in total');
+						socket.send(JSON.stringify({
+							event: 'live',
+							isLive: LIVE
+						}));
 					}
 					break;
 				case 'navigate-slide':

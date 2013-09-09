@@ -5,6 +5,7 @@
 		index: 0,
 		length: 0,
 		slides: [],
+		hasPermissions: false,
 
 		init: function () {
 			//Assemble the slide objects
@@ -59,21 +60,21 @@
 				switch (e.keyCode) {
 				case 40:
 					//Down arrow
-					presentation.nextSlide();
+					presentation.hasPermissions && presentation.nextSlide();
 					break;
 				case 38:
 					//Up arrow
-					presentation.prevSlide();
+					presentation.hasPermissions && presentation.prevSlide();
 					break;
 				case 32:
 					//Spacebar
 				case 39:
 					//Right arrow
-					presentation.nextFigure();
+					presentation.hasPermissions && presentation.nextFigure();
 					break;
 				case 37:
 					//Left arrow
-					presentation.prevFigure();
+					presentation.hasPermissions && presentation.prevFigure();
 					break;
 				case e.keyCode === 27:
 					console.log('ESCAPE');
@@ -213,6 +214,7 @@
 					console.log(this);
 					this.enabled = true;
 				} else {
+					presentation.hasPermissions = true;
 					return;
 				}
 				var socket = io.connect('http://' + location.hostname + ':8889');
@@ -232,7 +234,48 @@
 							case 'navigate-slide-figure':
 								presentation.goToSlideWithFigure(j.slide, j.figure);
 								break;
+							case 'live':
+								if(!!localStorage.getItem('name')) {
+									if(localStorage.getItem('name') === config.remoteName) {
+										document.body.classList.add('controls');
+										document.body.classList.remove('modal');
+										presentation.hasPermissions = true;
+										localStorage.setItem('name', 'remote');
+									} else if(localStorage.getItem('name') === config.displayName) {
+										document.body.classList.remove('modal');
+										presentation.hasPermissions = true;
+										localStorage.setItem('name', 'display');
+									}
+									return;
+								}
+																
+								console.log('WE ARE LIVE, ASK FOR DETAILS');
+								document.body.classList.add('modal');
+								presentation.hasPermissions = false;
+								var form = document.querySelector('#welcome form'),
+									nameInput = form[0];
+								form.onsubmit = function(e) {
+									e.stopPropagation();
+									e.preventDefault();
+									var name = nameInput.value;
+									
+									
+									if(name === config.remoteName) {
+										document.body.classList.add('controls');
+										document.body.classList.remove('modal');
+										presentation.hasPermissions = true;
+										localStorage.setItem('name', 'remote');
+									} else if(name === config.displayName) {
+										document.body.classList.remove('modal');
+										presentation.hasPermissions = true;
+										localStorage.setItem('name', 'display');
+									} else {
+										document.body.classList.remove('modal');
+										localStorage.setItem('name', name);
+									}
+								}
 								
+								break;
 						}
 					});
 				});
@@ -257,7 +300,12 @@
 		}
 
 	}
-
+	
+	var config = {
+		remoteName: 'remote',
+		displayName: 'display'
+	}
+	
 	document.addEventListener("DOMContentLoaded", function (e) {
 		presentation.init();
 	}, false);
