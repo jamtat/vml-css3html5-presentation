@@ -29,7 +29,8 @@
 				<h3>Progressive Enhancement</h3>
 				<figcaption>
 					<ul>
-						<li></li>
+						<li>The theme of the first half of this talk will be progressive enhancement</li>
+						<li>Then we'll move on to what I like to call opportunistic replacement</li>
 					</ul>
 				</figcaption>
 			</section>
@@ -44,8 +45,7 @@
 					<li>Hardware accelerated where possible = smooth!</li>
 				</ul>
 			</section>
-
-			<section class="example">
+			<section>
 				<h2>First declare your animation</h2>
 				<article>
 				<pre><code class="css">
@@ -86,8 +86,8 @@
 				</footer>
 				
 			</section>
-
-			<section class="example">
+			<section>
+				<h2>Now apply it to elements</h2>
 				<pre><code class="css">
 /* Apply animation */
 .nextsection .decor.left {
@@ -101,7 +101,47 @@
 						<li><p>Get crazy and use multiple animations!</p></li>
 					</ul>
 				</footer>
+			</section>			
+			<section>
+				<h2>PROTIP: Save time and effort: use LESS!</h2>
+				<article>
+				<pre><code class="css">
+/* Declare Animation */
+@keyframes bouncyWheatLeft {
+  0% {
+	-webkit-transform: translate3d(5px, 0, 0);
+	-moz-transform: translate(5px, 0);
+	-o-transform: translate(5px, 0);
+	-ms-transform: translate(5px, 0);
+	transform: translate3d(5px, 0, 0);
+  }
+  100% {
+	-webkit-transform: translate3d(-15px, 0, 0);
+	-moz-transform: translate(-15px, 0);
+	-o-transform: translate(-15px, 0);
+	-ms-transform: translate(-15px, 0);
+	transform: translate3d(-15px, 0, 0);
+  }
+}				
+				</code></pre>
+				<pre><code class="less">
+@keyframes bouncyWheatLeft {
+  0% {
+	.transform(translate3d(5px, 0, 0));
+  }
+  100% {
+	.transform(translate3d(-15px, 0, 0));
+  }
+}	
+				</code></pre>
+				</article>
+				<footer>
+					<ul>
+						<li><p>LESS cuts down on the cruft you have to write, like browser prefixes</p></li>
+					</ul>
+				</footer>
 			</section>
+			
 		</div>
 		
 	</div>

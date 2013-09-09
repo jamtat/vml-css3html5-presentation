@@ -34,7 +34,6 @@
 			});
 
 			this.length = this.slides.length;
-			this.mode = document.body.dataset.mode;
 			this.container = document.getElementById('container');
 
 			//Highlight the code blocks
