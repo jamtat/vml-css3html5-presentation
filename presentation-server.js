@@ -1,7 +1,7 @@
 var LIVE = true;
 
 
-var io = require('socket.io').listen(8889);
+var io = require('socket.io').listen(1337);
 
 var clients = [];
 var remotes = [];

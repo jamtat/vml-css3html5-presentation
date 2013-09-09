@@ -83,10 +83,10 @@
 			}, false);
 			
 			document.getElementById('left-arrow').addEventListener('click', function(e) {
-				presentation.prevFigure();
+				presentation.hasPermissions && presentation.prevFigure();
 			}, false);
 			document.getElementById('right-arrow').addEventListener('click', function(e) {
-				presentation.nextFigure();
+				presentation.hasPermissions && presentation.nextFigure();
 			}, false);
 			
 			
@@ -216,7 +216,7 @@
 					presentation.hasPermissions = true;
 					return;
 				}
-				var socket = io.connect('http://' + location.hostname + ':8889');
+				var socket = io.connect('http://' + location.hostname + ':1337');
 				this.socket = socket;
 				socket.on('connect', function () {
 					socket.send(JSON.stringify({
