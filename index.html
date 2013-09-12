@@ -6,6 +6,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="highlight/styles/tomorrow-night.css">
 		<link rel="stylesheet" href="presentation.css">
+		<link rel="stylesheet" href="custom.css">
 		<title></title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -133,7 +134,7 @@
   100% {
 	.transform(translate3d(-15px, 0, 0));
   }
-}	
+}
 				</code></pre>
 				</article>
 				<footer>
@@ -145,8 +146,99 @@
 			</section>
 			
 			<section>
-				<h2></h2>
+				<h2>CSS Transitions</h2>
+				<ul>
+					<li>Painless to add</li>
+					<li>Gracefully degrades in older browsers</li>
+					<li>Very good browser support</li>
+				</ul>
 			</section>
+			
+			<section class="full">
+				<iframe src="frames/wheat" frameborder="0"></iframe>
+			</section>
+			
+			<section>
+				<h2>Newer browsers vs <del>Internet Explorer</del> older browsers</h2>
+				<article>
+					<div class="fullflex">
+						<div class="example left"><object data="img/mr-border-radius.svg" class=""></object></div>
+						<div class="example right"><object data="img/mr-border-radius.svg" class=""></object></div>
+					</div>
+					<pre><code class="css">
+/* Transitions are super easy... */
+.iCanHasTransition {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;				
+}
+					</code></pre>
+					<pre><code class="css">
+/* ...and even better with LESS */
+.iCanHasTransition {
+	.transition( all 0.5s ease );				
+}
+					</code></pre>
+				</article>
+			</section>
+			
+			<section>
+				<article>
+					<h3>Q: Cool, but what can I transition?</h3>
+					<h3>A: Generally, anything that can be represented numerically!</h3>
+					<ul>
+						<li>Positions, dimensions, padding, margin</li>
+						<li>Colours, opacity</li>
+						<li>Box shadows, text shadows, transforms</li>
+						<li>Filters! (blurs and other GPU accel. effects)</li>
+					</ul>
+				</article>
+			</section>
+			
+			<section>
+				<article>
+					<h3>Cool beans, so I get cute rollover state animations...</h3>
+					<h3>YES! and then some!</h3>
+					<h3>Cue fancy demo time!</h3>
+				</article>
+			</section>
+			
+			<section class="full">
+				<iframe src="frames/pi/sea/en/index.html" frameborder="0"></iframe>
+				<figcaption>Demo tapping around countries</figcaption>
+			</section>
+			
+			<section>
+				<h2>Transitions are really awesome</h2>
+				<ul>
+					<li>Dynamic interactions with little animation code</li>
+					<li>Fallback to no transition where unavailable</li>
+					<li>Use classes to define states, let the browser do the hard work for you!</li>
+					<li>Hardware accelerated (property dependent)</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>Caveats</h2>
+				<ul>
+					<li>Prefixed in Safari 6 and below (mobile+desktop)</li>
+					<li>Really really weird rendering glitches in Safari 5.1 and below (mobile+desktop so this actually matters)
+						<ul>
+							<li>Padding sometimes calculated incorrectly leading to weird layout errors</li>
+							<li>Opacity transitions sometimes never happen, items stay invisible
+								<ul>
+									<li>You can fix this by forcing Safari to recalculate layout, there are several JS ways of doing this</li>
+									<li>You can not transition in Safari by leaving out -webkit-transition, beware you then lose the opacity transition on iOS 6! (iOS 7 supports unprefixed transition though yay)</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><p>Slim support for a common case, rollover reveals from <code>height: 0;</code> to <code>height: auto;</code></p><p>If you know the definite height of an element then set it for guaranteed transition.</p></li>
+					<li><p>Transitioning CSS <code>::before</code> and <code>::after</code> only works in Chrome</p></li>
+				</ul>
+			</section>
+			
+			
 			
 		</div>
 		

@@ -90,7 +90,7 @@
 			}, false);
 			
 			
-			
+			customStuff();
 		},
 
 		transformDeck: (function (offset) {
@@ -308,4 +308,12 @@
 	document.addEventListener("DOMContentLoaded", function (e) {
 		presentation.init();
 	}, false);
+	
+	
+	function customStuff() {
+		document.querySelector('div.fullflex').addEventListener('click', function() {
+			document.querySelector('div.fullflex').classList.toggle('active');
+		}, false);
+	}
+	
 })();
