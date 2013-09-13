@@ -1,0 +1,134 @@
+/*FROM PRIVACY POLICY*/
+ .tandccontents {
+	color: rgb(76, 26, 93);
+	font-weight: bold;
+	font-size: 14px;
+}
+a {
+	color: #4c1a5d;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: #4c1a5d;
+	text-decoration: none;
+}
+
+a.close {
+	background: url("popup-close-left.gif") no-repeat scroll left top transparent;
+	color: #572867;
+	height: 14px;
+	line-height: 14px;
+	margin-right: 3px;
+	text-decoration: none;
+	font-size: 9px;
+	font-weight:normal;
+	position:absolute;
+	padding: 0 5px;
+	text-align:center;	
+	right:10px;
+	top:-14px;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+a.close::before {
+	content:"";
+	position:absolute;
+	top:0px;
+	right:-3px;
+	height:14px;
+	width:3px;
+	background: url("popup-close-right.gif") no-repeat scroll left top transparent;
+}
+
+#overlay .pagecontent, #overlay #popupContainer {
+	height:100%;
+}
+
+#graphicContainer {
+	display: block;
+	background-image: url(images/overlayBackground.gif);
+	width:535px;
+/*	height:555px;*/
+}
+#graphicContainer {
+	display: block;
+	width:auto;
+	width:515px;
+	height:100%;
+	overflow-y: scroll;
+}
+#overlay {
+	background: url(popup-edge-top.png) no-repeat scroll left top transparent;
+	padding-top: 11px;
+	width: 535px;
+	position:relative;
+	height: 80%;
+	top: 10% !important;
+}
+#overlay title {
+	display:block;
+	color: #4C1A5D;
+	font-size: 1.3em;
+	font-weight: normal;
+	margin: 0 0 10px 14px;
+	padding: 0 0 6px;
+}
+#overlay .otherWrap {
+	background: url(popup-edge-btm.png) no-repeat scroll left bottom transparent;
+	padding-bottom: 11px;
+	padding-right: 10px;
+	width: 535px;
+	height:100%;
+}
+#overlay .contentWrap {
+	background: url(popup-edge-bg.png) repeat-y scroll left top transparent;
+	padding: 23px 7px 10px;
+	height:100%;
+}
+#overlay #scrollContainer {
+	padding: 0 5px;
+	padding-bottom: 15px;
+}
+#overlay #graphicContainer {
+	height: 100%;
+}
+ol li a, div.tandccontainer ol li a, .tandccontents ol li a {
+	color: #4C1A5D;
+	font-weight: bold;
+	text-decoration: none;
+}
+.tandccontents ol li {
+	list-style-type: decimal;
+	padding: 0.3em 0;
+	font-size:12px;
+}
+div.tandccontents ol, .tandccontents ol {
+	list-style: decimal outside none;
+	margin: 0 0 12px 47px;
+}
+
+/* BACK TO TOP LINKS */
+ul.lavuplist li {
+	background: url(blt_purple_bullet_up_onlav.gif) no-repeat 0 6px;
+	padding-left: 12px;
+	font-weight: bold;
+	font-size:11px;
+}
+
+div.thickboxbody_bottom div.boxbottom, div.tandccontainer div.thickboxbody_bottom div.boxbottom {
+	background: #e5dff4 url(bkg_483lavender_thick_boxbottom.png) left bottom no-repeat;
+	background: #e5dff4;
+	height: 16px;
+	padding: 0 0 5px 12px;
+	margin: 5px 0 0px 0;
+}
+
+div.thickboxbody_bottom, div.tandccontainer div.thickboxbody_bottom {
+	height: 16px;
+	margin-bottom: -9px;
+}

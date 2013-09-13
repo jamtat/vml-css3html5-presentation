@@ -1,0 +1,242 @@
+table[width="100%"] td nobr {
+display:block;
+height:30px;
+vertical-align:middle;
+}
+table[width="100%"] td[valign] nobr {
+display:inline;
+}
+
+#nav-container{background:#8b4f97 url(../images/nav/bg_navgradient.jpg) top left repeat-x;}
+.nav-rhs .utils a#bookinglink{background:url(../images/template/hdr_button_view_booking.jpg) no-repeat 0 0;}
+.nav-rhs .utils a#bookinglink:hover{background:url(../images/template/hdr_button_view_booking.jpg) no-repeat bottom left;}
+.nav-rhs .utils a#loginlink{background:url(../images/template/hdr_button_login.jpg) no-repeat 0 0;}
+.nav-rhs .utils a#loginlink:hover{background:url(../images/template/hdr_button_login.jpg) no-repeat bottom left;}
+.nav-rhs .utils a#logoutlink{background:url(../images/template/hdr_button_logout.jpg) no-repeat 0 0;}
+.nav-rhs .utils a#logoutlink:hover{background:url(../images/template/hdr_button_logout.jpg) no-repeat bottom left;}
+.nav-rhs .lang li{background:url(../images/nav/lang-selected.gif) no-repeat;}
+.nav-rhs .lang li ul{background:transparent url(../images/nav/lang-options-bg.gif) bottom left no-repeat;}
+.nav-rhs .lang #selbox li{background:#fff url(../images/nav/lang-options.gif);}
+.nav-rhs .l-en{background-image:url(../images/nav/flag-uk.gif);}
+.nav-rhs .l-de{background-image:url(../images/nav/flag-de.gif);}
+.nav-rhs .l-fr{background-image:url(../images/nav/flag-fr.gif);}
+.nav-rhs .l-it{background-image:url(../images/nav/flag-it.gif);}
+.nav-rhs .l-es{background-image:url(../images/nav/flag-es.gif);}
+.nav-rhs .l-ar{background-image:url(../images/nav/flag-gulf.png);}
+.nav-rhs .l-in{background-image:url(../images/nav/india-flag.png);}
+.nav-rhs .l-ba{background-image:url(../images/nav/flag-ba.gif);}
+#hi-image-control a.sublink{background:url(../images/hoteldetails/arrow.gif) no-repeat 0px 2px;}
+
+.lhmenu-top-white{background:transparent url(../images/panels/lhs-top-btm.png) no-repeat left bottom;}
+.lhs-container .lhmenu-top h2.justforbusiness{background:url(../images/panels/sidebar-title-justforbusiness.png) 0 0 no-repeat;}
+.lhs-container .lhmenu-btm li.lhbtmbullets{background:url(../images/template/blt_gold_bullet_matted_purple.gif) 0 3px no-repeat;}
+
+ul.faqs li{background:transparent url(../images/panels/faq-bullet.png) no-repeat  0 5px;}
+.lhs-container a.lhs-promotion{background:#4c1a5d url(../images/panels/lhs-promo-btm.png) no-repeat left bottom;}
+#wrapper.internal #footer-container,#wrapper.error #footer-container{background:#fff url(../images/panels/bg_footer_w.jpg) top left no-repeat;}
+h2#jfb_landing{background:url(../images/jfb/bkg_jfb_home_header.jpg) no-repeat 0 0;}
+div#sub3row div.sub3header{background:url(../images/template/bkg_sub3_shorttopside.gif) no-repeat 0 0;}
+div.twowide{background:url(../images/template/promo_315dkpurple_box.gif) no-repeat bottom left;}
+div.twowidecontainer{background:url(../images/template/bkg_twowide_purple_promos_bgbox.gif) no-repeat bottom left;}
+div.whitearrow{background:url(../images/template/blt_white_bullet_matted_dark.gif) no-repeat 0 0;}
+.lhmenu-container h2.jfb_faq{background:url(../images/jfb/h2_faq_leftnav_header_en.jpg) no-repeat 0 0;}
+div.leftnavpod2{background:url(../images/template/bkg_leftnav_lavender_pod2.gif) no-repeat bottom left;}
+div.leftnavpod3{background:url(../images/jfb/bkg_faq_leftnav_promopod_purplebg.gif) no-repeat bottom left;}
+div#sub3row{background:url(../images/template/bkg_sub3_longbottomside.gif) no-repeat bottom left;}
+div.sub3bottomedge{background:url(../images/template/bkg_sub3_lavwhite_bottomedge.gif) no-repeat bottom left;}
+div.backtohome,
+body #contentcolumn div.pagetitleback{background:url(../images/template/blt_white_bullet_matted_dark_left.gif) no-repeat 0 4px;}
+div.pagetitlelink{background:url(../images/template/blt_white_bullet_matted_dark.gif) no-repeat 0 4px;}
+div#jfb_faq_subheader a#faq_printable{background:url(../images/template/btn_white_button_135wide.gif) no-repeat 0 0;}
+div ul.lavenderlist li{background:url(../images/template/blt_purple_bullet_matted_lav.gif) no-repeat 0 6px;}
+div.faq_question div.faq_questionheadertop{background:url(../images/template/hdr_640lavender_header_top.gif) no-repeat 0 0;}
+div.faq_question div.faq_questionheaderbottom{background:url(../images/template/hdr_640lavender_header_bottom_outlined.gif) no-repeat 0 0;}
+div.faq_question div.faq_answer{background:url(../images/template/bkg_640lavender_outlined_loop.gif) repeat-y top left;}
+div.faq_question div.faq_answer div.backtotop a.top{background:url(../images/template/blt_purple_bullet_up_onwhite.gif) no-repeat 0 4px;}
+div.faq_question div.faq_answer div.lavoutlinebottom{background:url(../images/template/bkg_640lavender_outlined_bottom.gif) no-repeat bottom left;}
+div.quotepod{background:url(../images/template/bkg_div_quote_open.gif) no-repeat 0 0;}
+div.quotepod p.quote{background:url(../images/template/bkg_p_quote_close.gif) no-repeat bottom right;}
+div.threewide{background:url(../images/template/promo_210dkpurple_box.gif) no-repeat bottom left;}
+div.threewidecontainer{background:url(../images/template/bkg_threewide_purple_promos_bgbox.gif) no-repeat bottom left;}
+div#faqsub3row1{background:url(../images/template/bkg_640lavender_filled_top.gif) no-repeat 0 0;}
+div#faqsub3row2{background:url(../images/template/bkg_640lavender_filled_bottom.gif) no-repeat bottom left;}
+div.faqrowbox{background:url(../images/template/bkg_faq_row_box_threewide.gif) no-repeat bottom left;}
+div.leftnavpod4{background:url(../images/template/bkg_leftnav_maroon_promo.gif) no-repeat bottom left;}
+div.thickbox div.thickbox640header{background:#4c1a5d url(../images/template/bkg_h3purple640header_top.gif) no-repeat 0 0;}
+div.thickbox div.thickbox640header_bottom{background:url(../images/template/bkg_h3purple640header_bottom.gif) no-repeat 0 0;}
+div.thickbox div.thickboxbody{background:url(../images/template/bkg_640lavender_thick_bodyrepeat.gif) repeat-y top left; zoom:1}
+div.thickboxbody div.thickboxleft div.infobox{background:url(../images/template/bkg_354info_lav_box_top.gif) no-repeat 0 0;}
+div.thickboxbody div.thickboxleft div.infobox p{background:url(../images/template/ico_info_icon_on_lav.gif) no-repeat 0 4px;}
+div.thickboxbody div.thickboxleft div.infobox div.infobottom{background:url(../images/template/bkg_354info_lav_box_bottom.gif) no-repeat 0 0;}
+div.thickboxbody div.thickboxright div.thickboxright_list{background:url(../images/template/bkg_236h4_lav_on_white.gif) no-repeat 0 0;}
+div.thickboxbody div.thickboxright div.thickboxright_list h4{background:url(../images/template/bkg_236h4bottom_lav_on_white.gif) no-repeat bottom left;}
+div.thickboxbody div.thickboxright div.thickboxright_list ul{background:url(../images/template/bkg_236bodyloop_lav_on_white.gif) repeat-y top left;}
+div.thickboxbody div.thickboxright div.thickboxright_list ul li,div.knowboxbody ul.checkmarklist li, ul.checkmarklist li{background:url(../images/template/blt_checkmark_on_white.gif) no-repeat 0 5px;}
+div.thickboxbody div.thickboxright div.thickboxright_list ul li li{background:url(../images/template/blt_3px_purple_square.gif) no-repeat 0 9px;}
+div.thickboxbody div.thickboxright div.thickboxright_list div.thickboxright_btmline{background:url(../images/template/bkg_236bodybottom_lav_on_white.gif) no-repeat 0 0;}
+div.thickboxbody div.thickboxright div.pricebox,div.lavthickerbox div.alignright div.pricebox{background:url(../images/template/bkg_224outlined_lav_boxtop.gif) no-repeat 0 0;}
+div.thickboxbody div.thickboxright div.pricebox p,div.lavthickerbox div.alignright div.pricebox p{background:url(../images/template/bkg_224outlined_lav_boxbottom.gif) no-repeat bottom left;}
+div.thickboxbody div.thickboxbody_bottom{background:url(../images/template/bkg_640lavender_thick_bodybottom.gif) no-repeat bottom left;}
+div.knowbox div.knowbox640header{background:url(../images/template/bkg_640purple_header_nobox_top.gif) no-repeat 0 0;}
+div.knowbox div.knowbox640header_bottom{background:url(../images/template/bkg_640purple_header_nobox_bottom.gif) no-repeat 0 0;}
+div.knowbox div.knowboxbody div.topicbox div.topicheader{background:url(../images/template/bkg_210lav_boxtop.gif) no-repeat 0 0;}
+div.knowbox div.knowboxbody div.topicbox div.topicheader h4{background:url(../images/template/bkg_210lav_boxbottom.gif) no-repeat bottom left;}
+ul.lavbulletlink li{background:url(../images/template/blt_purple_bullet_matted_lav.gif) no-repeat 0 3px;}
+ul.lavuplist li{background:url(../images/template/blt_purple_bullet_up_onlav.gif) no-repeat 0 3px;}
+ul.backlist li{background:url(../images/template/blt_white_arrow_left_back.gif) no-repeat 0 0;}
+div.knowbox ul.checkmarklist li{background:url(../images/template/blt_checkmark_on_white.gif) no-repeat 0 4px;}
+div.fullwidelavbox h4{background:url(../images/template/bkg_fullwide_lav_header_top.gif) no-repeat 0 0;}
+div.fullwidelavbox div.fullwidelavboxhdrbtm{background:url(../images/template/bkg_fullwide_lav_header_btm.gif) no-repeat 0 0;}
+div.fullwidelavbox ul.checkmarklist2 li{background:url(../images/template/blt_checkmark_on_white.gif) no-repeat 0 2px;}
+div.lavthickbox,div.lavthickerbox{background:#e5dff4 url(../images/template/bkg_lavthickbox_top.gif) no-repeat 0 0;}
+div.lavthickbox div.lavthickheaderbtm,div.lavthickerbox h4.boxtop{background:url(../images/template/bkg_lavthickbox_header_btm.gif) no-repeat bottom left;}
+div.lavthickbox div.regularpod,div.lavthickbox div.newspod{background:url(../images/template/bkg_lavthickbox_middivider.gif) no-repeat -5px bottom;}
+div.lavthickerbox div.regularpod{background:url(../images/template/bkg_lavthickerbox_middivide.gif) no-repeat 0 bottom;}
+div.lavthickbox div.lastpod,div.lavthickbox div.lastnewspod{background:url(../images/template/bkg_lavthickbox_lastpod_btm.gif) no-repeat -5px bottom;}
+div.lavthickbox div.boxbottom,
+div.tandccontainer div.thickboxbody_bottom div.boxbottom{background: #e5dff4 url(../images/template/bkg_lavthickbox_bottomheader_btm.gif) no-repeat left bottom;}
+div.tandccontainer div.thickboxbody div.thickboxfull{background:url(../images/template/bkg_lavthickbox_lastpod_btm.gif) no-repeat 0 bottom;padding-bottom:9px;}
+div.thickboxfull input#halfsearchbox {width:230px;}
+div.lavthickerbox div.boxbottom{background:url(../images/template/bkg_lavthickerbox_lastpod_bottom.gif) no-repeat left bottom;}
+div.twothirdsthickbox{background:url(../images/template/bkg_twothirdsthickbox_header_top.gif) no-repeat 0 0;}
+div.twothirdsthickbox h4{background:url(../images/template/bkg_twothirdsthickbox_header_bottom.gif) no-repeat bottom left;}
+div.twothirdsthickbox div.twothirdsthickbody{background:url(../images/template/bkg_twothirdsthickbox_bodyloop.gif) repeat-y;}
+div.twothirdsthickbox div.twothirdsthickbottom{background:url(../images/template/bkg_twothirdsthickbox_bottomedge.gif) no-repeat 0 0;}
+div.onethirdthickbox{background:url(../images/template/bkg_onethirdthickbox_header_top.gif) no-repeat 0 0;}
+div.onethirdthickbox h4{background:url(../images/template/bkg_onethirdthickbox_header_bottom.gif) no-repeat bottom left;}
+div.onethirdthickbox div.onethirdthickbody{background:url(../images/template/bkg_onethirdthickbox_bodyloop.gif) repeat-y;}
+div.onethirdthickbox div.onethirdthickbottom{background:url(../images/template/bkg_onethirdthickbox_bottomedge.gif) no-repeat 0 0;}
+div.lavthickbox div.rightwhitebox ul.ovallist li.rightedge{background:url(../images/template/bkg_whiteovalbox_onlav_rightedge.gif) no-repeat 0 0;}
+div.lavthickbox div.rightwhitebox ul.ovallist li.leftedge{background:url(../images/template/bkg_whiteovalbox_onlav_leftedge.gif) no-repeat top right;}
+div.newsbox div.lavenderpromotwowide{background:url(../images/template/bkg_twowide_lavpod_bottom.gif) bottom left;}
+div.smallwhitenewsbox{background:#FFF url(../images/template/bkg_news_smallwhitebox_onlav_topedge.gif) no-repeat 0 0;}
+div.smallwhitenewsboxbtm{background:transparent url(../images/template/bkg_news_smallwhitebox_onlav_bottomedge.gif) no-repeat 0 0;}
+div#jfb_landing_subheader,div#jfb_faq_subheader,div#jfb_forbusiness_subheader,div#jfb_meetingrooms_subheader{background:url(../images/template/bkg_light_purple_fullwide.gif) repeat-y bottom left;}
+div.sub3 ul.sub3list li,div.faq_question div.faq_answer ul li,div#forbusinessbody ul li,div.thickboxbody div.thickboxleft ul li,div.thickboxfull ul li,ul.bulletlink li{background:url(../images/template/blt_purple_bullet_matted_white.gif) no-repeat 0 3px;}
+#jfb_landing_subheader ul.bulletlink li{background:url(../images/template/blt_purple_bullet_matted_lav.gif) no-repeat 0 3px;}
+div#jfb_faq_article,
+div#jfb_forbusiness_landing,
+div#jfb_landing h2,
+div#jfb_landing h1,
+div#jfb_meetingrooms_landing{background:url(../images/template/bkg_640header_dkpurple_on_lav.gif) no-repeat bottom left;}
+div#jfb_faq_landing h2,
+div#jfb_facilities_landing,div#jfb_landing h2.solo {background:url(../images/template/bkg_640header_dkpurple_on_white.gif) no-repeat bottom left;}
+div.innlocationrow { background:transparent url(../images/template/bkg_640lav_directory_top.gif) no-repeat 0 0; }
+div.innlocationrow2 { background:transparent url(../images/template/bkg_640lav_directory_bottom.gif) no-repeat 0 0;}
+
+div.lavbox { background:url(../images/template/bkg_lavthickbox_noheader_header.gif) no-repeat 0 0; }
+
+div.lavbox div.lavboxbottom { background:url(../images/template/bkg_640lavender_thick_bodybottom.gif) no-repeat 0 0; }
+
+div.lavboxpod, div.lavboxlastpod { background:url(../images/template/bkg_lavthickbox_middivider.gif) no-repeat scroll 0 bottom; }
+
+
+div.playercontainer div.videotabs ul li { background:#b6a1bc url(../images/template/bkg_videoplayer_offtab_leftedge.gif) no-repeat 0 0; }
+
+div.playercontainer div.videotabs ul li a { background:url(../images/template/bkg_videoplayer_offtab_rightedge.gif) no-repeat top right; }
+
+div.playercontainer div.videotabs ul li.current { background:#4c1a5d url(../images/template/bkg_videoplayer_currenttab_leftedge.gif) no-repeat 0 0; }
+
+div.playercontainer div.videotabs ul li.current a { background:url(../images/template/bkg_videoplayer_currenttab_rightedge.gif) no-repeat top right; }
+
+/*div.playercontainer div.playerflashbg { background:url(../images/template/bkg_lav640_no_matted_edges.gif) no-repeat 0 0; }*/
+
+div.knowbox div.knowboxbody div.marginleft div.pricebox2 h4 { background:url(../images/template/bkg_254lav_pricebox2_bottom.gif) no-repeat bottom left; }
+
+div.why2row { background:url(../images/template/bkg_640lavender_filled_top.gif) no-repeat 0 0; }
+
+div.why2row div.why2inner {  background:url(../images/template/bkg_lavender_twowide_bottombox.gif) no-repeat bottom left;}
+
+div.lavlistbox div.lavlistboxbottom { background:url(../images/template/bkg_lavthickbox_thickbottom.gif) no-repeat bottom left;}
+
+div.lavlistbox div.lavlistpodbottom { background:url(../images/template/bkg_lavthickbox_middivider.gif) no-repeat bottom left; }
+
+div.lavlistbox div.lavlistpod div.listpodright div.widepricebox p {background:url(../images/template/bkg_widepricebox_bottomedge.gif) no-repeat bottom left;}
+
+div.lavlistbox div.lavlistpod div.listpodright div.widepricebox {background:url(../images/template/bkg_widepricebox_topside.gif) no-repeat 0 0;}
+
+div.lavlistbox div.lavlistpod { background:url(../images/template/bkg_640lavender_thick_bodyrepeat.gif) repeat-y 0 0; }
+
+div.lavlistbox { background:url(../images/template/bkg_lavthickbox_noheader_header.gif) no-repeat 0 0; }
+
+div.popupwindowbox { background:url(../images/template/bkg_popupwindow_outterbox_top.gif) no-repeat 0 0; }
+
+div.popupwindowbox div.closebutton { background:url(../images/template/bkg_popupwindow_close_btn_longleft.gif) no-repeat 0 0; }
+
+div.popupwindowbox div.closebutton p { background:url(../images/template/bkg_popupwindow_close_btn_rightedge.gif) no-repeat top right; }
+
+div.popupwindowbox div.popupwindowboxbottom { background:url(../images/template/bkg_popupwindow_outterbox_bottom.gif) no-repeat 0 0; }
+
+.sb_listing_pod { background:url(../images/sb/bg_sb_listing_top.gif) no-repeat left top;  }
+.sb_listing_pod p a { background:url(../images/template/blt_purple_bullet_matted_white.gif) no-repeat left 50%; }
+.sb_listing_bdy {  background:url(../images/sb/bg_sb_listing.gif) no-repeat  left bottom; }
+
+div.icon_key { background:url(../images/sb/bg_sb_icon_key.gif) no-repeat 0 0;}
+
+a span.external {padding-left:12px; background:url(../images/icons/externalsite.png) no-repeat right 2px; zoom:1}
+#footer-container a span.external {display:none;}
+li.lhbtmbullets a span.external {background-image:url(../images/news/ico_go_icon_gold_on_purple.gif)}
+
+div#footer-container a.external {
+background:none;
+padding-right:0;
+}
+.two-for-one { background:transparent url(../images/template/bkg_640purple_header_nobox_top.gif) no-repeat 0 0; }
+.two-for-one div.twoforonebottom { background:  url(../images/template/bkg_640purple_header_nobox_bottom.gif) no-repeat left bottom;}
+.two-for-one ul.goldbulletlistbig li { background: url(../images/template/blt_gold_bullet_matted_purple.gif) no-repeat 0 3px; }
+
+/* non-integrated hotel search forms */
+fieldset.cqhotelsearch {float:left;display:inline;margin:1em 1em .5em 0}
+body div fieldset.cqhotelsearch div.alignleft input.ac_input {padding:0.3em;margin-right:1em}
+form#breakfastSearch {float:left}
+/*div.thickbox div.thickboxbody div.thickboxfull fieldset.cqhotelsearch label {display:none; width:200px;}  counteracting specificty elsewhere */
+div.thickbox div.thickboxbody div.thickboxfull div.showlabel fieldset.cqhotelsearch label {display:block;}
+div.thickbox div.thickboxbody div.thickboxfull div.fullsearch fieldset.cqhotelsearch label,
+div.thickbox div.thickboxbody div.thickboxfull div.fullsearch fieldset.cqhotelsearch .ac_input {width:320px;}
+
+fieldset.cqhotelsearch label.error,
+fieldset.cqhotelsearch label.errorLabel {
+	background:transparent url(../images/icons/formwarning.png) no-repeat 0 0;
+	color:#900;
+	display:block;
+	padding-left:22px;
+}
+
+form#meetingSearch .quickSearchField {width:21em;}
+
+#quickSearchForm {zoom:1; float:left}
+
+#quickSearchForm fieldset.cqhotelsearch input.quickSearchField {
+	width: 245px;
+	margin-right:1em;
+	padding:0.3em;	
+}
+
+div.newspoddivider { background:#FFFFFF url(../images/template/bkg_dottednewspod_divider.gif) no-repeat 0 0; }
+
+body div#sub3row.contactSub3row { width:640px; margin-bottom:7px; position:relative }
+body div#sub3row.contactSub3row div.sub3header { height:13px;}
+
+div#sub3row.contactSub3row div.sub3 { 
+	float:left;
+	display:inline;
+	margin:-8px 1px 0 5px;
+	width:206px;
+	overflow:hidden;
+}
+
+/*open belly temaplate styles*/
+div#jfb_facilities_landing.alt {margin-bottom:0;}
+.openBelly {background:url(../images/bellytemplate/header-bttm.gif) no-repeat bottom left;padding-bottom:20px;margin-bottom:0;}
+div#openBelly-promo-panel {background:url(../images/bellytemplate/promo-inner.gif) repeat-y top left;min-height:5px;}
+p.openBelly{padding-top:10px; padding-left:10px;font-size: 12px;background-color:#fff;}
+#openBelly-promo-panel .inner{background:url(../images/bellytemplate/promo-bttm.jpg) no-repeat bottom left;padding-left:0px;padding-bottom:30px;position:relative;}
+#openBelly-promo-panel .content{background:url(../images/bellytemplate/promo-top.jpg) no-repeat top left;min-height:77px;position:relative;}
+#openBelly-promo-panel .content span.img-one img{position:absolute;top:20px;left:27px;}
+#openBelly-promo-panel .content span.img-two img{position:absolute;top:20px;left:234px;}
+#openBelly-promo-panel .content span.img-three img{position:absolute;top:20px;left:440px;}
+#openBelly-promo-panel .inner .col1, #openBelly-promo-panel .inner .col2, #openBelly-promo-panel .inner .col3{width:210px; display: inline; float: left; overflow: hidden;}
+#openBelly-promo-panel .inner ul li a{text-transform: uppercase; color: #fff;font-size:13px; font-weight:bold;line-height:1.4em;}
+#openBelly-promo-panel .inner ul li {text-align:center; margin: 0 20px 0 20px;}
+
+

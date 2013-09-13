@@ -1,0 +1,64 @@
+.fullflex {
+	flex-grow: 1;
+	flex-basis: 100%;
+	display:flex;
+	position:relative;
+}
+
+.fullflex .example {
+	position:absolute;
+	top:0;
+	width:20%;
+	height:20%;
+	border-radius: 50% 50% 20% 20% / 80% 80% 20% 20%;
+	background: #bada55;
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.4),
+				inset 0 -20px 50px -20px rgba(0,0,0,0.5);
+	-webkit-transform: translate3d(0,0,0);
+	-ms-transform: translate(0,0);
+	transform: translate3d(0,0,0);
+	
+	pointer-events: none;
+	overflow: hidden;
+}
+
+.example object {
+	width: 100%;
+}
+
+.fullflex.active .example {
+	-webkit-transform: translate3d(0,400%,0);
+	-ms-transform: translate(0,400%);
+	transform: translate3d(0,400%,0);
+}
+
+.example.left {
+	left:20%;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.example.right {
+	right:20%;
+	background: #008FFF;
+}
+
+div.fullflex {
+	background: var(accent);
+	border: 10px solid transparent;
+}
+
+div.fullflex::after {
+	content: "Click for happiness";
+	position: absolute;
+	color: var(bg);
+	display: block;
+	bottom:0;
+	left:0;
+	right:0;
+	text-align: center;
+	font-size: 0.8em;
+	height: 2em;
+	line-height: 2em;
+}

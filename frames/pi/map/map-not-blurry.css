@@ -1,0 +1,371 @@
+.interactivemap {
+    background: #622c72;
+}
+
+#flashContent {
+    width:100%;
+    height:100%;
+    opacity:0;
+	-webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+#flashContent.ready {
+	opacity:1;
+}
+
+#flashContent nav {
+    height:27px;
+    width: 100%;
+
+}
+
+#flashContent nav ul {
+    list-style:none;
+    width:100%;
+    height: 100%;
+    text-align:center;
+    padding: 0;
+    margin: 0;
+    background:#955b9e;
+    z-index: 0;
+    position:relative;
+}
+
+#flashContent nav ul li {
+    width: 17%;
+    height: 100%;
+    display: inline-block;
+    padding:0;
+    margin: 0 8px;
+    text-transform: capitalize;
+    color:white;
+    font-size: 13px;
+    line-height: 27px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+#flashContent nav ul li:hover {
+    color: #fdc538;
+}
+
+#flashContent nav ul li.active {
+    background: #461c57;
+}
+
+#flashContent section {
+    overflow:hidden;
+    width:100%;
+    height:555px;
+    height: -webkit-calc(100% - 27px);
+    height: calc(100% - 27px);
+    background-color: #4e2460;
+    background: url(bg-pattern.svg) center center repeat;
+    background: url(bg-pattern.svg) center center repeat,
+                radial-gradient(ellipse at center center, rgba(124,74,138,1) 10%,rgba(78,36,96,1) 70%); 
+    -webkit-box-shadow: inset  0 5px 5px rgba(0,0,0,0.05),
+                        inset 0 0 90px #300845;
+    -moz-box-shadow: inset  0 5px 5px rgba(0,0,0,0.05),
+                     inset 0 0 90px #300845;
+    box-shadow: inset  0 5px 5px rgba(0,0,0,0.05),
+                inset 0 0 90px #300845;
+    border-radius: 0 0 15px 15px;
+	position: relative;
+    overflow:hidden;
+}
+
+#region-display {
+	position: absolute;
+	top:35px;
+	left: 55px;
+	bottom:35px;
+	width:260px;
+	border-radius: 12px;
+	border: 1px solid white;
+	-webkit-box-shadow: 0 0 6px rgba(255,255,255,0.7);
+	-moz-box-shadow: 0 0 6px rgba(255,255,255,0.7);
+	box-shadow: 0 0 6px rgba(255,255,255,0.7);
+	background: #663075;
+	background: linear-gradient(to bottom, #663075 0%, #8d5396 100%);
+	opacity:0;
+	-webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+	
+	-webkit-transform: scale(0.25) translate3d(100%,0,0);
+	transform: scale(0.25) translate3d(100%,0,0);
+	
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	
+	padding: 0 35px 0 15px;
+}
+
+#region-display header {
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+	font-weight:200;
+	margin: 15px 0;	
+	padding-bottom: 15px;
+	color: white;
+	
+	line-height: 1.1em;
+	border-bottom: 1px dashed rgba(255, 255, 255, 0.47);
+	flex-shrink: 0;
+}
+
+#region-display header div {
+	height: 125px;
+	border-radius: 12px 12px 0 0;
+	background-size: cover;
+	background-position: center center;
+	background-image: none;
+	margin: -15px -35px 15px -15px;
+}
+
+#map.uk + #region-display header div {background-image: url(regionDetailsImageUK.png);}
+#map.gulf + #region-display header div {background-image: url(regionDetailsImageArabianGulf.png);}
+#map.india + #region-display header div {background-image: url(regionDetailsImageIndia.png);}
+#map.asia + #region-display header div {background-image: url(regionDetailsImageIndonesia.png);}
+
+#region-display header span {
+	color: #ffc739;
+}
+
+#region-display p {
+	flex-grow: 1;
+	color: white;
+	font-size: 11px;
+	overflow-y: scroll;
+	margin-right: -15px;
+	margin-bottom: 15px;
+	padding-right: 5px;
+	-webkit-overflow-scroll: touch;
+}
+
+#region-display p::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+#region-display p::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 3px;
+/* 	background: #cfcfcf; */
+}
+ 
+#region-display p::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	height:10px;
+	background: #51325d;
+/* 	-webkit-box-shadow: inset 0 0 2px rgba(255,255,255,0.4); */
+	
+    border: 1px solid #9357B4;
+}
+
+#region-display a#linkout {
+	flex-shrink: 0;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 11px;
+	font-weight: 200;
+	height: 31px;
+	/* line-height: 38px; */
+	margin-bottom: 12px;
+	background: #60316d;
+	/* padding-left: 15px; */
+	margin-right: -22px;
+	border-radius: 3px;
+	text-decoration:none;
+	-webkit-box-shadow: 0 2px 0 #57265e;
+	-moz-box-shadow: 0 2px 0 #57265e;
+	box-shadow: 0 2px 0 #57265e;
+	padding-top: 8px;
+	display: block;
+	text-align: center;
+}
+
+#region-display a#linkout::after {
+	content: "▶";
+	padding-left: 6px;
+	position:relative;
+	top:-1px;
+	color: #ffdd25;
+}
+
+#region-display a#linkout:hover {
+	color: #fdc538;
+}
+
+#region-display a.closer {
+	position: absolute;
+	border-radius: 50%;
+	border: 2px solid white;
+	font-size: 28px;
+	width: 1em;
+	height: 1em;
+	top:-14px;
+	right:-14px;
+	background: #552b65;
+	background: #552b65 radial-gradient(ellipse at center center, rgba(255,255,255,0.3) 10%,transparent 70%);
+	text-align: center;
+	line-height: 0.7em;
+	
+	-webkit-box-shadow: 0 0 6px rgba(255,255,255,1);
+	-moz-box-shadow: 0 0 6px rgba(255,255,255,1);
+	box-shadow: 0 0 6px rgba(255,255,255,1);
+	z-index: 10;
+}
+
+#region-display a.closer::after, #region-display a.closer::before {
+	content: "";
+	width: 2px;
+	height: 0.6em;
+	background: white;
+	display: block;
+	position: absolute;
+	top: 0.13em;
+	left: 44%;
+	
+	-webkit-transform-origin: center center;
+	-moz-transform-origin: center center;
+	-ms-transform-origin: center center;
+	-overflow-transform-origin: center center;
+	transform-origin: center center;
+	
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#region-display a.closer::before {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate-(45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+#map[class] + #region-display {
+	opacity:1;
+	-webkit-transform: scale(1) translate3d(0,0,0);
+	transform: scale(1) translate3d(0,0,0);
+}
+#map[class=""] + #region-display {
+	opacity:0;
+	-webkit-transform: scale(0.25) translate3d(100%,0,0);
+	transform: scale(0.25) translate3d(100%,0,0);
+}
+
+#map {
+    width:100%;
+    height:100%;
+    background: url(world-map.svg) center center no-repeat;
+    
+    position:relative;
+	
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    -webkit-transform: scale(1.5) translate(-126px, 0);
+    -webkit-transform: scale(1.5) translate3d(-126px, 0, 0);
+    -moz-transform: scale(1.5) translate(-126px, 0);
+    -ms-transform: scale(1.5) translate(-126px, 0);
+    -o-transform: scale(1.5) translate(-126px, 0);
+    transform: scale(1.5) translate(-126px, 0);
+    transform: scale(1.5) translate3d(-126px, 0, 0);
+}
+
+.click-mask {
+	position: absolute;
+	cursor: pointer;
+/* Debug for positioning */
+/* 	background:cyan;
+	opacity:0.5;
+	border: 1px solid black; */
+
+}
+
+
+.click-mask#uk-mask {
+	width: 80px;
+	height: 80px;
+	top: 162px;
+	left: 371px;
+}
+.click-mask#gulf-mask {
+	width: 95px;
+	height: 90px;
+	top: 252px;
+	left: 490px;
+}
+.click-mask#india-mask {
+	width: 100px;
+	height: 107px;
+	top: 241px;
+	left: 584px;
+}
+.click-mask#asia-mask {
+	width: 140px;
+	height: 68px;
+	top: 331px;
+	left: 659px;
+}
+
+#map.uk {
+    -webkit-transform: scale(5) translate(39px, 80px);
+    -webkit-transform: scale(5) translate3d(39px, 80px, 0);
+    -moz-transform: scale(5) translate(39px, 80px);
+    -ms-transform: scale(5) translate(39px, 80px);
+    -o-transform: scale(5) translate(39px, 80px);
+    transform: scale(5) translate(39px, 80px);
+    transform: scale(5) translate3d(39px, 80px, 0);
+}
+
+#map.gulf {
+    -webkit-transform: scale(4) translate(-76px, -20px);
+    -webkit-transform: scale(4) translate3d(-76px, -20px, 0);
+    -moz-transform: scale(4) translate(-76px, -20px);
+    -ms-transform: scale(4) translate(-76px, -20px);
+    -o-transform: scale(4) translate(-76px, -20px);
+    transform: scale(4) translate(-76px, -20px);
+    transform: scale(4) translate3d(-76px, -20px, 0);
+}
+
+#map.india {
+    -webkit-transform: scale(3) translate(-168px, -32px);
+    -webkit-transform: scale(3) translate3d(-168px, -32px, 0);
+    -moz-transform: scale(3) translate(-168px, -32px);
+    -ms-transform: scale(3) translate(-168px, -32px);
+    -o-transform: scale(3) translate(-168px, -32px);
+    transform: scale(3) translate(-168px, -32px);
+    transform: scale(3) translate3d(-168px, -32px, 0);
+}
+
+#map.asia {
+    -webkit-transform: scale(3) translate(-239px, -104px);
+    -webkit-transform: scale(3) translate3d(-239px, -104px, 0);
+	-moz-transform: scale(3) translate(-239px, -104px);
+	-ms-transform: scale(3) translate(-239px, -104px);
+	-o-transform: scale(3) translate(-239px, -104px);
+	transform: scale(3) translate(-239px, -104px);
+	transform: scale(3) translate3d(-239px, -104px, 0);
+}
+
+div#preload {
+	width:0;
+	height:0;
+	overflow:hidden;
+}

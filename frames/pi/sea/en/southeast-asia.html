@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Premier Inn Southeast Asia</title>
+		<meta name="description" content="Premier Inn is proud to be bringing its high standards of customer service, great value and modern comfortable rooms to Southeast Asia." >
+		<meta name="keywords" content="premier inn, premier inn hotels, premier inn south east asia, premier inn southeast asia, premier inn indonesia, premier inn hotels bali, premier inn hotels java, premier inn hotels sumatra, premier inn hotels jakarta, premier inn malaysia, premier inn thailand, premier inn singapore, budget hotels, discount hotels, budget hotels indonesia, budget hotels bali, budget hotels java, budget hotels sumatra, budget hotels jakarta, budget hotels malaysia, budget hotels thailand, budget hotels singapore, quality hotels indonesia, quality hotels bali, quality hotels java, quality hotels sumatra, quality hotels jakarta, quality hotels malaysia, quality hotels thailand, quality hotels singapore, " >
+		<meta name="date" content="2013-09-01" >
+		<meta name="DC.Title" content="Premier Inn International Hotelsf" >
+		<meta name="DC.Subject" content="premier inn, premier inn hotels, premier inn south east asia, premier inn southeast asia, premier inn indonesia, premier inn hotels bali, premier inn hotels java, premier inn hotels sumatra, premier inn hotels jakarta, premier inn malaysia, premier inn thailand, premier inn singapore, budget hotels, discount hotels, budget hotels indonesia, budget hotels bali, budget hotels java, budget hotels sumatra, budget hotels jakarta, budget hotels malaysia, budget hotels thailand, budget hotels singapore, quality hotels indonesia, quality hotels bali, quality hotels java, quality hotels sumatra, quality hotels jakarta, quality hotels malaysia, quality hotels thailand, quality hotels singapore" >
+		<meta name="DC.Description" content="Premier Inn is proud to be bringing its high standards of customer service, great value and modern comfortable rooms to Southeast Asia." >
+		<meta name="DC.Date" content="2013-09-01" >
+		<meta name="DC.Publisher" content="" >
+<!--		<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!-- Styles for dropdown lang box/popup -->
+		<link rel="stylesheet" type="text/css" href="../../navbox/reset-min.css">
+		<link rel="stylesheet" type="text/css" href="../../navbox/screen.css">
+		<link rel="stylesheet" type="text/css" href="../../navbox/cq.css">
+		<link rel="stylesheet" type="text/css" href="../../popup/popup.css">
+		<style type="text/css">
+			body {
+				min-height:100%;
+			}
+			html {
+				height:100%;
+			}
+			.ldd-wrapper span {
+				line-height: 13px;
+			}
+			header, .header_sea_en, .header_sea_id {
+				position: relative;
+			}
+			.nav-rhs {
+				font-size: 0.7em;
+			}
+			.nav-rhs a, .ldd-header a {
+				font-weight:normal;
+			}
+			.nav-rhs .ldd-header {
+				background :url(../../images/nav/flag-ba.gif) 6px 5px no-repeat;
+				display:none;
+			}
+			.nav-rhs .ldd-header.vis {
+				display: block;
+				cursor: pointer;
+			}
+			.nav-rhs .ldd-header.vis a {
+				text-decoration: none;
+				color: inherit;
+			}
+			.ldd-wrapper a.dropdown span {
+				color:#bfafe4;
+			}
+			
+		</style>
+<!-- End dropdown/popup styles -->
+		
+		<link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../../css/webflow.css">
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" type="text/css" href="../../css/piinternational8120838_ie7.css">
+		<![endif]-->
+		<!--[if gte IE 8]>
+			<link rel="stylesheet" type="text/css" href="../../css/piinternational8120838.webflow.css">
+		<![endif]-->
+		<!--[if !(IE)]>
+			<!-->
+			<link rel="stylesheet" type="text/css" href="../../css/piinternational8120838.webflow.css">
+		<!--<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+		<script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
+		<!--<script src="js/vendor/jquery-1.9.1.min.js"></script>-->
+		<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+		<script src="../../js/plugins.js"></script>
+		<script src="../../js/main.js"></script>
+		<script type="text/javascript" src="../../js/vendor/swfobject.js"></script>
+		
+<!-- Script for dropdown -->
+		<!--<script type="text/javascript" src="../../navbox/minimal.js"></script>-->
+		<!--<script type="text/javascript" src="../../navbox/pi-en.js"></script>-->
+		<!--<script src="../../js/jquery.premierinn-1.0.js"></script>-->
+		<script type="text/javascript" src="../../navbox/jquery.metadata.js"></script>
+		<script type="text/javascript">
+			$.fn.langdropdown = function() {
+				if (!this.length) {
+					return this;
+				}
+
+				return this.each(function() {
+					var $this = $(this);
+
+					// Language selection dropdown replacement
+					$this.hide();
+
+					var lis = "";
+					var curlinner = $("form label", $this).html();
+					var curli = '<span>' + curlinner + '</span>';
+
+					var thisurl = document.location.pathname;
+
+					$(".lsel", $this).each(function() {
+						var $this = $(this);
+						var metadata = $this.metadata();
+						var txt = $this.html();
+						var langClass = (metadata.lang) ? ' l-' + metadata.lang : '';
+						txt = txt.split("|");
+
+						var li = '<span class="sect-cc">' + txt[0] + '</span><span class="sect-ln' + langClass + '">' + txt[1] + '</span>';
+
+						//if (curli === null) {curli=li;}
+						//if (this.selected) {curli=li;}
+						var url;
+						//url = $this.parents('form').attr('action') + '?' + $this.parents('select').attr('name') + "=" + $this.attr('value');
+						url = $this.data('piurl');
+
+						var target = "";
+						if (metadata.external) {
+							target = ' onclick="return !window.open(this.href);" ';
+						}
+						lis += '<li><a href="' + url + '"' + target + '>' + li + '</a></li>';
+					});
+					$this.before('<div class="ldd-header">' + $(".lsel:first", $this).html() + '</div>');
+					$this.append('<div class="ldd-wrapper"><a class="dropdown" href="' + thisurl + '" onclick="return false">' + curli + '</a><div id="selbox"><ul></ul></div></div>');
+					$this.find("#selbox ul").html(lis);
+					$this.hover(function() {
+						$this.find('#selbox').stop(true).css('height', 'auto').slideDown(200);
+					}, function() {
+						$this.find('#selbox').stop(true).slideUp(100);
+					});
+
+					$this.find("form").css({
+						position: 'absolute',
+						left: '-9999px'
+					});
+					// Don't bin the form entirely otherwise browser form field value remembering (on back) doesn't work any more, as form counts on the page mismatch between load-time and submit-time.
+
+					$this.show();
+
+				});
+
+			};
+		</script>
+		<script type="text/javascript">
+			//var popUpTitle = I18N.SELECT_ARRIVAL_DATE;
+			var WS_URL = "/services/en/";
+			var CONTEXT_PATH = "";
+			var LOCALE = "en";
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".lang").langdropdown();
+			});
+		</script>
+<!-- End dropdown script -->
+	<script type="text/javascript" src="//nexus.ensighten.com/whitbread/Bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="maincontainer">
+			<div class="w-clearfix header_sea_en">
+				<div class="w-clearfix headerlogobox">
+					<a href="index.html">
+						<img class="logo" src="../../images/logo.png" alt="logo.png">
+					</a>
+					<div class="w-clearfix headerbacktomaplinkcontainer">
+						<img class="backtomaplinkcontainericon" src="../../images/arrowTip.png" alt="arrowTip.png">
+						<a class="backtomaplinkcontainerlabel" href="index.html">View Interactive Map</a>
+					</div>
+				</div>
+				<div class="nav-rhs">
+					<div class="ldd-header vis">
+						<a href="../id/southeast-asia-bahasa.html">Bahasa Indonesia</a>
+					</div>
+					<div class="lang">
+						<form id="book" action="http://www.premierinn.com/en/siteSwitch.action" method="post" style="position: absolute; left: -9999px;">
+							<fieldset>
+								<legend>Language and Country selection form</legend>
+								<label for="opts">Choose a language and country</label>
+								<select name="selection" id="opts">
+									<option value="0" data-piurl="http://www.premierinn.com/en/siteSwitch.action?selection=0" class="lsel {lang:&#39;en&#39;}">UK &amp; Ireland hotels | English</option>
+									<option value="0" data-piurl="http://www.premierinn.com/en/siteSwitch.action?selection=1" class="lsel {lang:&#39;en&#39;}">Arabian Gulf hotels | English</option>
+									<option value="0" data-piurl="http://ar.premierinn.ae/gcc/en/" class="lsel {lang:&#39;ar&#39;}">فنادق في الخليج العربي | العربية</option>
+									<option value="0" data-piurl="http://www.premierinn.com/en/siteSwitch.action?selection=2" class="lsel {lang:&#39;en&#39;}">India hotels | English</option>
+									<option value="0" data-piurl="../id/southeast-asia-bahasa.html" class="lsel {lang:&#39;ba&#39;}">Hotel Asia Tenggara | Bahasa ID</option>
+								</select>
+<!--
+								<button type="submit" class="ctabutton">
+									<span>Submit</span>
+								</button>
+-->
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="pagecontent_sea">
+				<div class="regioncontent">
+					<img class="hotelfeaturesheader" src="../../images/southEastAsia/seaHeader.png" alt="southEastAsiaMainImage.png">
+					<!--h5 class="hotelfeatureboxheader">Bringing Quality and Value to Southeast Asia</h5-->
+					<p class="hotelfeatureparagraph">As the UK and Ireland's biggest hotel chain, we're delighted to continue our international expansion. Our hotels in the Southeast Asia region, due to open from 2014, offering a high quality service, a warm welcome and clean, comfortable rooms. Premier Inn offers a unique combination of excellent facilities at affordable prices. We guarantee you everything you need for a truly memorable stay.
+						<br>
+						<br>Premier Inn will be opening hotels in major hubs in Indonesia, Thailand, Malaysia and Singapore. All our Southeast Asia hotels are conveniently located so you can make the most of your stay for business or leisure, giving easy access to key business areas and tourist attractions.
+						<br>
+						<br>At the end of a long day, you can either sit down to a delicious meal or unwind with a cocktail in the hotel's bar. Premier Inn is committed, putting the guest at the heart of everything we do.</p>
+					<div class="w-row grid hotelfeaturegrid">
+						<div class="w-col w-col-5 gridcolumn">
+							<img class="hotelfeatureimage" src="../../images/roomShoot3.png" alt="roomShoot2.png">
+						</div>
+						<div class="w-col w-col-7 gridcolumn">
+							<h5 class="hotelfeatureboxheader">Continuing to expand Internationally</h5>
+							<p class="hotelfeatureparagraph">We are excited by the opportunity to develop the Premier Inn brand outside of the UK. Premier Inn is the UK's favourite hotel company, consistently achieving the top ranking in consumer brand preference score and winning many awards. We believe Premier Inn is a highly transferable brand that will be equally welcomed and valued by international customers.
+								<br>
+								<br>Over the past 6 years we have established a presence in two markets - the Arabian gulf and South Asia where we have a number of operational hotels and several under development. In 2014, we will commence operations in Indonesia, shortly followed by properties in Thailand, Singapore and Malaysia.</p>
+						</div>
+					</div>
+					<div class="w-row grid hotelfeaturegrid">
+						<div class="w-col w-col-7 gridcolumn">
+							<h5 class="hotelfeatureboxheader">Our Rooms</h5>
+							<p class="hotelfeatureparagraph">At Premier Inn we offer clean, comfortable, great value rooms with excellent facilities - at affordable prices. Plus our friendly service will make you feel right at home. We're so confident you'll enjoy a good night's sleep, we'll give you your money back if you don't.</p>
+						</div>
+						<div class="w-col w-col-5 gridcolumn">
+							<img class="hotelfeatureimageright" src="../../images/roomShoot2.png" alt="roomShoot3.png">
+						</div>
+					</div>
+					<div class="hotelfeaturelistingbox">
+						<h4 class="hotelfeaturelistingboxheader">
+							<b>In every Premier Inn in Southeast Asia you'll find:</b>
+							<br>
+						</h4>
+						<div class="w-row block">
+							<div class="w-col w-col-6 w47p">
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">A comfy king-sized bed</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Great quality cosy duvet and pillows</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">En-suite bathroom</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Shower / Bath gel</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Air-conditioning</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Flat screen TV</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Refrigerator</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Laptop and valuables safe</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Tea and coffee making facilities</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Hairdryer</div>
+								</div>
+								<div class="verticalspacer_15"></div>
+								<div class="hotelfeaturelistingitemlabel">Our hotels also have adapted rooms for guests with disabilities.</div>
+							</div>
+							<div class="w-col w-col-6 w47p ">
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Spacious desk area should you need to work</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Complimentary internet access</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Family rooms</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Interconnecting rooms</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Cots (On request)</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Smoking and non-smoking areas</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">At least one restaurant and a bar</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">Eat-as-much-as-you-like Breakfast</div>
+								</div>
+								<div class="w-clearfix hotelfeaturelistingitem">
+									<img class="hotelfeaturelistingitemicon" src="../../images/tick.png" alt="tick.png">
+									<div class="hotelfeaturelistingitemlabel">24-hour reception</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hotelfeaturelistingbox">
+						<h4 class="hotelfeaturelistingboxheader">
+							<b>Potential owners and Developers:
+								<b>
+									<br>
+						</h4>
+						<p class="hotelfeatureparagraph hotelfeatureboxpadding">We are keen to talk with potential owners and developers in these target territories - South Asia, Middle East and Southeast Asia.
+							<br>If you have a development opportunity in any of these territories, or indeed elsewhere, the please do get in touch with the relevant person, the contact details are listed below.
+							<br>
+							<br>For Southeast Asia/Asia Pacific:
+							<strong>
+								<a href="mailto:development.asiapacific@international.premierinnn.com">development.asiapacific@international.premierinnn.com</a>
+							</strong>
+							<br>Erik van Keulen tel:
+							<strong>+65 623 6 6807</strong>
+							<br>
+							<br>For Middle East &amp; Africa:
+							<strong>
+								<a href="mailto:development.mea@international.premierinn.com">development.mea@international.premierinn.com</a>
+							</strong>
+							<br>David Vely tel:
+							<strong>+971 4 350 7422</strong>
+							<br>
+							<br>For South Asia:
+							<strong>
+								<a href="mailto:development.southasia@international.premierinn.com">development.southasia@international.premierinn.com</a>
+							</strong>
+							<br>Erik van Keulen tel:
+							<strong>+65 623 6 6807</strong>
+							<br>
+							<br>For the UK:
+							<strong>
+								<a href="mailto:john.bates@whitbread.com">john.bates@whitbread.com</a>
+							</strong>
+							<br>John Bates tel:
+							<strong>+44 7920 284 185</strong>
+							<br>
+							<br>For the rest of the world:
+							<strong>
+								<a href="mailto:development.restofworld@international.premierinn.com">development.restofworld@international.premierinn.com</a>
+							</strong>
+							<br>Paul Macpherson tel:
+							<strong>+971 (0) 4 350 7423</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<img class="footerhorizontaldivider" src="../../images/footerDivider.png" alt="footerDivider.png">
+				<div class="footersectionbottom">
+					<div class="w-row footersectionbottomgrid">
+						<div class="w-col w-col-6 footersectioncolumn">
+							<div class="w-row">
+								<div class="w-col w-col-6 footerinternalgridcolumn">
+									<a class="footerlink" href="privacy.html" rel="#overlay" style="text-decoration:none">Privacy Policy
+										<br>
+									</a>
+									<a class="footerlink" href="cookies.html" rel="#overlay" style="text-decoration:none">Cookies
+										<br>
+									</a>
+								</div>
+								<div class="w-col w-col-6 footerinternalgridcolumn">
+									<h4 class="footersectionbottomgridcolumnheader4">Over
+										<strong>650 Premier Inn hotels</strong> across the UK, Ireland and worldwide</h4>
+									<p class="footerparagraphs">
+										<span style="letter-spacing: 0px;">Premier Inn is proud to be bringing its high standards of customer service, great value and modern comfortable rooms to SE Asia.</span>
+										<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--[if lte IE 7]>
+							<div class="footersectioncolumn">
+							<![endif]-->
+							<!--[if gte IE 8]>
+								<div class="w-col w-col-6 footersectioncolumn">
+								<![endif]-->
+								<!--[if !(IE)]>
+									<!-->
+									<div class="w-col w-col-6 footersectioncolumn">
+									<!--<![endif]-->
+									<h4 class="footersectionbottomgridcolumnheader4">Major Premier Inn locations, worldwide</h4>
+									<div class="w-row">
+										<div class="w-col w-col-6 footerinternalgridcolumn">
+											<p class="footerparagraphs">
+												<strong>India Hotels</strong>
+												<br>
+												<a class="hotelLink" href="http://global.premierinn.com/in/en/hotel/UKPIN2/delhi-hotels">New Delhi Shalimar Bagh</a>
+												<br>
+												<a class="hotelLink" href="http://global.premierinn.com/in/en/hotel/UKPNI1/bangalore-hotels">Bangalore Whitefield</a>
+												<br>
+												<a class="hotelLink" href="http://global.premierinn.com/in/en/hotel/UKPIN3/pune-kharadi">Pune Kharadi</a>
+												<br>
+												<br>
+											</p>
+											<p class="footerparagraphs">
+												<strong>Arabian Gulf Hotels</strong>
+												<br>
+												<a class="hotelLink" href="http://global.premierinn.com/gcc/en/hotel/UKPAD1/abu-dhabi-capital-centre">Abu Dhabi Capital Centre</a>
+												<br>
+												<a class="hotelLink" href="http://global.premierinn.com/gcc/en/hotel/UKPAD2/abu-dhabi-international-airport">Abu Dhabi International Airport</a>
+												<br>
+												<a class="hotelLink" href="http://global.premierinn.com/gcc/en/hotel/UKPDU1/dubai-airport">Dubai International Airport</a>
+												<br>
+												<a class="hotelLink" href="http://global.premierinn.com/gcc/en/hotel/UKPID/dubai-investments-park">Dubai Investments Park</a>
+												<br>
+												<a class="hotelLink" href="http://global.premierinn.com/gcc/en/hotel/UKPIS/dubai-silicon-oasis">Dubai Silicon Oasis</a>
+											</p>
+										</div>
+										<!--[if lte IE 7]>
+											<div class="w-col w-col-6">
+											<![endif]-->
+											<!--[if gte IE 8]>
+												<div class="w-col w-col-6 footerinternalgridcolumn">
+												<![endif]-->
+												<!--[if !(IE)]>
+													<!-->
+													<div class="w-col w-col-6 footerinternalgridcolumn">
+													<!--<![endif]-->
+													<p class="footerparagraphs">
+														<strong>UK Hotels</strong>
+														<br>
+														<a class="hotelLink" href="http://www.premierinn.com/en/london-hotels.html">London hotels</a>
+														<br>
+														<a class="hotelLink" href="http://www.premierinn.com/en/birmingham-hotels.html">Birmingham hotels</a>
+														<br>
+														<a class="hotelLink" href="http://www.premierinn.com/en/manchester-hotels.html">Manchester hotels</a>
+														<br>
+														<a class="hotelLink" href="http://www.premierinn.com/en/glasgow-hotels.html">Glasgow hotels</a>
+														<br>
+														<a class="hotelLink" href="http://www.premierinn.com/en/edinburgh-hotels.html">Edinburgh hotels</a>
+														<br>
+														<a class="hotelLink" href="http://www.premierinn.com/en/liverpool-hotels.html">Liverpool hotels</a>
+														<br>
+														<a class="hotelLink" href="http://www.premierinn.com/en/leeds-hotels.html">Leeds hotels</a>
+														<br>
+														<a class="hotelLink" href="http://www.premierinn.com/en/sheffield-hotels.html">Sheffield hotels</a>
+														<br>
+														<a class="hotelLink" href="http://www.premierinn.com/en/bristol-hotels.html">Bristol hotels</a>
+														<br>
+														<a class="hotelLink" href="http://www.premierinn.com/en/newcastle-hotels.html">Newcastle hotels</a>
+														<br>
+													</p>
+													</div>
+												</div>
+											</div>
+									</div>
+									</div>
+								</div>
+							</div>
+							<!-- overlayed element -->
+							<div class="apple_overlay" id="overlay" style="display: none;">
+								<a class="close">Close X</a>
+								<!-- the external content is loaded inside this tag -->
+								<div class="otherWrap" style="padding-right: 0;">
+									<div class="contentWrap"></div>
+								</div>
+							</div>
+							<!-- make all links with the 'rel' attribute open overlays -->
+							<script>
+								$(function() {
+
+									// if the function argument is given to overlay,
+									// it is assumed to be the onBeforeLoad event listener
+									$("a[rel]").overlay({
+
+										mask: 'black',
+										//effect: 'apple',
+
+										onBeforeLoad: function() {
+
+											// grab wrapper element inside content
+											var wrap = this.getOverlay().find(".contentWrap");
+
+											// load the page specified in the trigger
+											wrap.load(this.getTrigger().attr("href"));
+										}
+
+									});
+								});
+							</script>
+							<!-- Begin Google Analytics code -->
+<!--
+							<script type="text/javascript">
+								var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+								document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+							</script>
+							<script type="text/javascript">
+								var pageTracker = _gat._getTracker("UA-3818426-1");
+								pageTracker._initData();
+								pageTracker._trackPageview("/Southeast Asia English/Budget Hotels Southeast Asia - Premier Inn");
+							</script>
+-->
+							<!-- End Google Analytics code -->
+							
+	</body>
+
+</html>

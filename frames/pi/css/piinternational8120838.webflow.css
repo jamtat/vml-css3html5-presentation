@@ -1,0 +1,435 @@
+body {
+  margin-top: 0px;
+  background-color: #beb1e5;
+  font-family: verdana,helvetica,sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+}
+h1 {
+  position: static;
+  left: -250px;
+  top: 0px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: none;
+  clear: none;
+  color: #333;
+  font-size: 36px;
+  line-height: 44px;
+  font-style: normal;
+  font-weight: 400;
+}
+h2 {
+  margin: 10px 0px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+}
+h3 {
+  margin-right: 0px;
+  margin-bottom: 6px;
+  margin-left: 0px;
+  color: white;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+}
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 0px;
+  border: 1px none black;
+  color: #4e225e;
+  font-weight: 400;
+}
+.button {
+  display: inline-block;
+  padding: 4px 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.header {
+  display: none;
+  width: 900px;
+  height: 139px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  background-image: url(../images/headerBackground.jpg);
+}
+
+.header_sea_en {
+    display: block;
+    width: 900px;
+    height: 139px;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    background-image: url(../images/sea_header_eng.jpg);
+}
+
+.header_sea_id {
+    display: block;
+    width: 900px;
+    height: 139px;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    background-image: url(../images/sea_header_id.jpg);
+}
+
+.maincontainer {
+  display: block;
+  width: 900px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  box-shadow: black 1px -2px 6px 0px;
+  background-color: #ffffff;
+}
+.interactivemap {
+  width: 900px;
+  height: 582px;
+  margin-top: 0px;
+
+}
+.logo {
+  width: 119px;
+  height: 82px;
+  margin-top: 16px;
+  margin-left: 17px;
+  float: left;
+}
+.countryselect {
+  width: 136px;
+  height: 21px;
+  margin-top: 50px;
+  margin-right: 10px;
+  float: right;
+  background-image: none;
+}
+.headercopycontainer {
+  display: inline;
+  width: 618px;
+  height: 100%;
+  max-width: 618px;
+  min-width: 618px;
+  float: left;
+}
+.headercolumns {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+}
+.headercolumn {
+  height: 100%;
+}
+.standardcontainer {
+  height: 100%;
+}
+.footerhorizontaldivider {
+  margin-top: -51px;
+}
+.footersectionbottom {
+  display: block;
+  margin-top: -21px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fffffe;
+}
+.fotterbottomgrid {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footersectionbottomgrid {
+  padding-bottom: 23px;
+  padding-left: 0px;
+}
+.footersectionbottomgridcolumn {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.footerparagraphs {
+  margin-right: 0px;
+  margin-left: 1px;
+  border-top-style: none;
+  color: #764F83;
+  line-height: 16px;
+  letter-spacing: 0px;
+  font-size: 11px;
+}
+
+.footerparagraphs strong {
+  font-size:13px;
+}
+
+.footerlink {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 12px;
+  color: #4d215e;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 10px;
+  height: 21px;
+}
+.footer {
+  background-color: #fffffe;
+  background-image: none;
+}
+.footersectiontop {
+
+  padding-top: 27px;
+  padding-right: 31px;
+  padding-left: 24px;
+  background-color: #622c72;
+  background-image: -webkit-linear-gradient(bottom, #8c5598, #622c72);
+  background-image: -o-linear-gradient(bottom, #8c5598, #622c72);
+  background-image: linear-gradient(to top, #8c5598, #622c72);
+}
+.footersectiontopparagraph1 {
+  color:#FFFFFF;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 16px;
+  font-size: 11px;
+}
+.footersectiontopparagraph2 {
+  color:#FFFFFF;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  border-width: 0px;
+  border-color: black;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  font-size: 11px;
+  line-height: 16px;
+}
+.footersectiontopspacer {
+  display: block;
+  height: 68px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footersectiontopheading {
+  padding-bottom: 10px;
+  margin-left:-2px;
+}
+
+.footersectionbottomgridcolumnheader4 {
+  width: 231px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 16px;
+  color: #764F83;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.pagecontent {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.pagecontent_sea {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #FFFFFF;
+}
+
+.regioncontent {
+  display: block;
+  margin: 0px auto 2px;
+  padding: 21px 21px 50px;
+}
+.footersectioncolumn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 21px;
+  padding-left: 21px;
+  float: left;
+}
+.footerinternalgridcolumn {
+  margin-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.grid.hotelfeaturegrid {
+  display: block;
+  margin: 21px auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.gridcolumn {
+  display: block;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  float: left;
+}
+.hotelfeatureimage {
+  position: static;
+  display: block;
+  margin-top: 0px;
+  margin-left: 0px;
+  float: none;
+}
+.hotelfeaturesheader {
+  margin-bottom: 21px;
+}
+.hotelfeatureboxheader {
+  margin-bottom: 14px;
+  color: #4d215e;
+  line-height: 16px;
+}
+.hotelfeatureparagraph {
+  border-color: black;
+  border-top-style: none;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-left-style: none;
+  border-left-width: 1px;
+  color: #4e225e;
+  font-size: 11px;
+  line-height: 16px;
+}
+.hotelfeatureparagraph.hotelfeatureboxpadding {
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.hotelfeatureparagraph.hotelfeatureboxpadding a {
+	color: #4e225e;
+	text-decoration:none;
+}
+
+.hotelfeatureparagraph.hotelfeatureboxpadding a:hover {
+  color: #f5c744;
+}
+
+.hotelfeatureimageright {
+  margin-left: 42px;
+}
+.hotelfeaturelistingboxheader {
+  margin-top: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  border-radius: 8px;
+  background-color: #4d215e;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.hotelfeaturelistingbox {
+  margin-bottom: 21px;
+  padding-bottom: 8px;
+  border: 6px solid #e4dff4;
+  border-radius: 15px;
+}
+.hotelfeaturelistingitem {
+  display: block;
+  height: 15px;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  float: none;
+}
+.hotelfeaturelistingitemlabel {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-bottom: 0px;
+  float: none;
+  font-size: 11px;
+  line-height: 16px;
+}
+.hotelfeaturelistingitemicon {
+  margin-top: 3px;
+  margin-right: 9px;
+  margin-left: 0px;
+  float: left;
+}
+.verticalspacer_15 {
+  height: 15px;
+}
+.headerlogobox {
+  width: 160px;
+  height: 139px;
+  float: left;
+}
+.headerbacktomaplinkcontainer {
+  width: 100%;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: 21px;
+  padding-top: 0px;
+  float: left;
+}
+.backtomaplinkcontainericon {
+  margin: 6px 10px 7px 6px;
+  padding-top: 0px;
+  padding-left: 0px;
+  float: left;
+}
+.backtomaplinkcontainerlabel {
+  width: auto;
+  height: 100%;
+  float: left;
+  color: white !important;
+  line-height: 16px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.maincontainer {
+    box-shadow: black 1px -2px 6px 0px;
+}
+
+.hotelLink, .hotelLink:visited, .footerlink, .footerlink:visited {
+    font-size: 11px;
+    color: #764F83;
+    text-decoration: none;
+    font-weight:normal;
+}
+
+.hotelLink:hover, .footerlink:hover {
+    color: #FFC726 !important;
+    text-decoration: underline;
+}
+
+
+

@@ -1,0 +1,31 @@
+
+/* the overlayed element */
+.apple_overlay {
+
+    /* initially overlay is hidden */
+    display:none;
+
+    /* growing background image */
+    background-image:url(/images/overlayBackground.gif);
+    /* must be initially hidden */
+    display:none;
+
+    /* place overlay on top of other elements */
+    z-index:10000;
+
+    /* styling */
+    background-color:#333;
+
+    width:675px;
+    min-height:200px;
+    border:1px solid #666;
+}
+
+/* default close button positioned on upper right corner */
+.apple_overlay .close {
+    background-image:url(/media/img/overlay/close.png);
+    position:absolute; right:5px; top:5px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}

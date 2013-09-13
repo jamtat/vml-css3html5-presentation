@@ -1,0 +1,158 @@
+<MapData>
+    <Settings>
+
+    </Settings>
+    <Navigation>
+        <item id="0" regionID="1"><![CDATA[HOME]]></item>
+        <item id="1" regionID="2"><![CDATA[UNITED KINGDOM]]></item>
+        <item id="2" regionID="3"><![CDATA[ARABIAN GULF]]></item>
+        <item id="3" regionID="4"><![CDATA[INDIA]]></item>
+        <item id="4" regionID="5"><![CDATA[SOUTHEAST ASIA]]></item>
+    </Navigation>
+    <Regions>
+        <region id="0">
+        	<regionSprite></regionSprite>
+            <rectangle><x><![CDATA[-200]]></x><y><![CDATA[-185]]></y><width><![CDATA[600]]></width><height><![CDATA[370]]></height></rectangle>
+            <details />
+        </region>
+
+        <region id="1">
+            <regionSprite></regionSprite>
+            <rectangle>
+            	<x><![CDATA[0]]></x>
+            	<y><![CDATA[0]]></y>
+            	<width><![CDATA[900]]></width>
+            	<height><![CDATA[528]]></height>
+            </rectangle>
+            <details />
+        </region>
+
+        <region id="2">
+        	<regionSprite>
+            	<mapsLinkage><![CDATA[RegionUnitedKingdom]]></mapsLinkage>
+            	<cordinates>
+            	    <x><![CDATA[-37.7]]></x>
+                	<y><![CDATA[-70.3]]></y>
+            	</cordinates>
+            </regionSprite>
+            <rectangle><x><![CDATA[-127.7]]></x><y><![CDATA[-125.8]]></y><width><![CDATA[180]]></width><height><![CDATA[111]]></height></rectangle>
+            <details>
+                <title><![CDATA[UK & IRELAND]]></title>
+                <description><![CDATA[There are over 650 Premier Inn hotels located all over the UK & Ireland. This means you’ll find a good night guaranteed and a warm welcome in most cities and towns for business and leisure guests. You can also find us close to many popular tourist attractions, seaside towns, airports and along major roads.
+At Premier Inn we pride ourselves on comfort and quality. That's why each of our rooms have a king-size bed, en-suite bathroom, Freeview TV and Wi-Fi.<br><br>All our hotels have a bar and restaurant, either within the hotel or just next door, offering a wide selection of meals and hearty eat-as-much-as-you-like breakfast.
+]]></description>
+                <imageFrame>1</imageFrame>
+                <cta>
+                    <title><![CDATA[VISIT PREMIER INN UK & IRELAND]]></title>
+                    <url><![CDATA[http://www.premierinn.com/]]></url>
+                </cta>
+            </details>
+        </region>
+
+        <region id="3">
+        	<regionSprite>
+            	<mapsLinkage><![CDATA[RegionArabianGulf]]></mapsLinkage>
+            	<cordinates>
+            	    <x><![CDATA[84.35]]></x>
+                	<y><![CDATA[17.20]]></y>
+            	</cordinates>
+            </regionSprite>
+           <rectangle><x><![CDATA[-48.15]]></x><y><![CDATA[-42.175]]></y><width><![CDATA[225]]></width><height><![CDATA[138.75]]></height></rectangle>
+            <details>
+                <title><![CDATA[ARABIAN GULF]]></title>
+                <description><![CDATA[We currently have 5 hotels in the Arabian Gulf region - 3 in Dubai and 2 in Abu Dhabi - offering high quality service, a warm welcome and a total of 1,350 quality, clean and comfortable rooms. Combine this with the swimming pools at each hotel, state-of-the art facilities and endless excitement that the region has to offer and you're guaranteed a memorable stay at prices you can afford.<br><br>All our Arabian Gulf hotels are conveniently located so you can make the most of the modern shopping malls, traditional souks, fun water parks, convention centres and all the other amazing attractions. And at the end of a long day, you can either sit down to a delicious meal or unwind with a cocktail in the hotel's bar.  
+]]></description>
+                <imageFrame>2</imageFrame>
+                <cta>
+                    <title><![CDATA[VISIT PREMIER INN ARABIAN GULF]]></title>
+                    <url><![CDATA[http://global.premierinn.com/gcc/en/]]></url>
+                </cta>
+            </details>
+        </region>
+
+        <region id="4">
+        	<regionSprite>
+            	<mapsLinkage><![CDATA[RegionIndia]]></mapsLinkage>
+            	<cordinates>
+            	    <x><![CDATA[171.95]]></x>
+                	<y><![CDATA[19.65]]></y>
+            	</cordinates>
+            </regionSprite>
+            <rectangle><x><![CDATA[1.95]]></x><y><![CDATA[-52.85]]></y><width><![CDATA[300]]></width><height><![CDATA[185]]></height></rectangle>
+            <details>
+                <title><![CDATA[INDIA]]></title>
+                <description><![CDATA[Our hotels in Bangalore, New Delhi and Pune offer high quality service, a warm welcome and a total of 350 quality, clean and comfortable rooms. Combine this with a full service bar (87), multi-cuisine restaurant (LINX) at each hotel and Noodle Bar - Tangles (only at Pune Kharadi) and state-of-the-art facilities - such as internet connectivity in each room, meeting rooms and conferencing/ banqueting facilities - and you're assured of a good stay at prices you can afford.<br><br>We have also started building new hotels in Goa and Chennai to provide another 130 and 116 rooms respectively.  All our hotels in India are conveniently located so you can make the most of the stay for business or leisure. And at the end of a long day, you can either sit down to a delicious meal at LINX or unwind with a drink in 87.
+]]></description>
+                <imageFrame>3</imageFrame>
+                <cta>
+                    <title><![CDATA[VISIT PREMIER INN INDIA]]></title>
+                    <url><![CDATA[http://global.premierinn.com/in/en/]]></url>
+                </cta>
+            </details>
+        </region>
+
+        <region id="5">
+        	<regionSprite>
+            	<mapsLinkage><![CDATA[RegionIndonesia]]></mapsLinkage>
+            	<cordinates>
+            	    <x><![CDATA[259.05]]></x>
+                	<y><![CDATA[82.70]]></y>
+            	</cordinates>
+            </regionSprite>
+           <rectangle><x><![CDATA[69.1]]></x><y><![CDATA[9.8]]></y><width><![CDATA[300]]></width><height><![CDATA[185]]></height></rectangle>
+            <details>
+                <title><![CDATA[SOUTHEAST ASIA]]></title>
+                <description><![CDATA[Premier Inn will be opening new hotels in major hubs in Indonesia, Thailand, Malaysia and Singapore from 2014 onwards.  All our Southeast Asia hotels will be conveniently located so you can make the most of your stay for business or leisure giving easy access to key business areas and tourist attractions.<br><br>Our new hotels will offer the same high quality service, a warm welcome and clean, comfortable rooms as our existing hotels in other regions with state of the art facilities and restaurants - and you will be assured of a good stay at prices you can afford.
+]]></description>
+                <imageFrame>4</imageFrame>
+                <cta>
+                    <title><![CDATA[VISIT PREMIER INN SOUTHEAST ASIA]]></title>
+                    <url><![CDATA[southeast-asia-bahasa.html]]></url>
+                </cta>
+            </details>
+        </region>
+    </Regions>
+    <Locale>
+        <language code="en" name="english">
+            <dictionary>
+            	<key id="introductionMessage">
+            	<![CDATA[Welcome to Premier Inn <font color="#e3b76f">International Hotels</font> <br><br>With over 650 hotels across the UK, Ireland and worldwide, we are continuing to expand our Premier Inn brand into existing and new international regions. Click on a highlighted region on the map to discover more about our hotels in these areas.]]>
+            	</key>
+                <key id="menuHomeItem">
+                    <![CDATA[HOME]]>
+                </key>
+                <key id="menuArabianGulfItem">
+                    <![CDATA[Arabian Gulf]]>
+                </key>
+                <key id="menuUnitedKingdomItem">
+                    <![CDATA[United Kingdom]]>
+                </key>
+                <key id="menuIndiaItem">
+                    <![CDATA[India]]>
+                </key>
+                <key id="menuSouthEastAsiaItem">
+                    <![CDATA[South East Asia]]>
+                </key>
+            </dictionary>
+        </language>
+        <language code="id" name="bahasa">
+            <dictionary>
+                <key id="menuHomeItem">
+                    <![CDATA[HOME]]>
+                </key>
+                <key id="menuArabianGulfItem">
+                    <![CDATA[Arabian Gulf]]>
+                </key>
+                <key id="menuUnitedKingdomItem">
+                    <![CDATA[United Kingdom]]>
+                </key>
+                <key id="menuIndiaItem">
+                    <![CDATA[India]]>
+                </key>
+                <key id="menuSouthEastAsiaItem">
+                    <![CDATA[South East Asia]]>
+                </key>
+            </dictionary>
+        </language>
+    </Locale>
+</MapData>
