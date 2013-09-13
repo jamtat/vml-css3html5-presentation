@@ -146,10 +146,11 @@ section header::after {
 section.front {
 	border-left-width: calc(3 * var(leftpadding));
 	var-front-multiply: 2;
+	overflow: visible;
 }
 
 section.front::before {
-	content:"";
+	content: "";
 	display: block;
 	border-left: calc(var(front-multiply) * var(leftpadding)) solid var(accent);
 	border-bottom: calc(var(front-multiply) * var(leftpadding)) solid transparent;
