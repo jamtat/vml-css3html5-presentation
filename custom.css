@@ -62,3 +62,44 @@ div.fullflex::after {
 	height: 2em;
 	line-height: 2em;
 }
+
+div[class*='triangle'] {
+	width: 3em;
+	height: 3em;
+	margin: 0.5em;
+	display: inline-block;
+}
+
+.triangle-right {
+	border-left: 3em solid orange;
+	border-top: 1.5em solid transparent;
+	border-bottom: 1.5em solid transparent;
+}
+
+.triangle-corner {
+	border-left: 3em solid orange;
+	border-bottom: 3em solid transparent;
+}
+
+.triangle-up {
+	border-bottom: 3em solid orange;
+	border-left: 1.5em solid transparent;
+	border-right: 1.5em solid transparent;
+}
+
+.triangle-skew {
+	border-right: 3em solid orange;
+	border-top: 1em solid transparent;
+	border-bottom: 2em solid transparent;
+}
+
+.triangle-trapezium {
+	border-bottom: 3em solid orange;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+}
+
+small {
+	font-size: 0.5em;
+	color: white;
+}
